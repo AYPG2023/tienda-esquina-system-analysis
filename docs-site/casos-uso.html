@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casos de uso | Tienda de la Esquina</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <button class="menu-toggle">Menú</button>
+  <div class="site-shell">
+    <aside class="sidebar">
+      <div class="brand"><p class="brand-kicker">Interacciones</p><h1 class="brand-title">Casos de uso</h1><p class="brand-copy">Comportamientos del sistema vistos desde actores, flujos y validaciones.</p></div>
+      <nav class="nav">
+        <a href="index.html">Inicio</a><a href="scrum.html">Scrum</a><a href="stakeholders.html">Stakeholders</a><a href="requerimientos.html">Requerimientos</a><a href="historias.html">Historias</a><a href="backlog.html">Backlog</a><a href="casos-uso.html">Casos de uso</a><a href="diagramas.html">Diagramas</a><a href="modelo-er.html">Modelo ER</a><a href="arquitectura.html">Arquitectura</a><a href="mockups.html">Mockups</a><a href="riesgos.html">Riesgos</a><a href="qa.html">QA</a><a href="roadmap.html">Roadmap</a><a href="conclusiones.html">Conclusiones</a>
+      </nav>
+    </aside>
+    <main class="content">
+      <section class="hero reveal">
+        <p class="eyebrow">Especificacion funcional</p>
+        <h1 class="page-title">Casos de uso clave</h1>
+        <p class="lead">La especificacion de Casos de Uso traduce los requerimientos en comportamientos concretos con actores, precondiciones, flujos y reglas relacionadas.</p>
+      </section>
+      <section class="table-card reveal">
+        <h2>Catálogo resumido</h2>
+        <table>
+          <thead><tr><th>ID</th><th>Nombre</th><th>Actor principal</th><th>Valor</th></tr></thead>
+          <tbody>
+            <tr><td>CU-01</td><td>Iniciar sesión</td><td>Administrador / Empleado</td><td>Controlar acceso por rol.</td></tr>
+            <tr><td>CU-02</td><td>Registrar producto</td><td>Administrador</td><td>Mantener catálogo vigente.</td></tr>
+            <tr><td>CU-07</td><td>Registrar compra</td><td>Administrador</td><td>Abastecer y actualizar inventario.</td></tr>
+            <tr><td>CU-09</td><td>Registrar venta</td><td>Empleado</td><td>Flujo operativo principal.</td></tr>
+            <tr><td>CU-11</td><td>Consultar reportes</td><td>Administrador</td><td>Apoyar toma de decisiones.</td></tr>
+            <tr><td>CU-12</td><td>Generar cierre diario</td><td>Administrador</td><td>Consolidar la jornada.</td></tr>
+            <tr><td>CU-14</td><td>Gestionar inventario</td><td>Administrador</td><td>Supervisar existencias y alertas.</td></tr>
+            <tr><td>CU-15</td><td>Consultar productos vencidos</td><td>Administrador</td><td>Evitar ventas no aptas.</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="grid-2 reveal">
+        <article class="panel">
+          <h2>Flujo critico</h2>
+          <p>`CU-09 Registrar venta` concentra validación de stock, cálculo de totales, registro de fecha y hora, actualización de inventario y generacion de comprobante conceptual.</p>
+        </article>
+        <article class="panel">
+          <h2>Coherencia documental</h2>
+          <p>Cada Caso de Uso fue trazado contra RF, RN y actores. Esta relación se verifica en la matriz de trazabilidad y en los mockups de la solución propuesta.</p>
+        </article>
+      </section>
+      <footer class="footer reveal"><strong>Tienda de la Esquina</strong> | Universidad: Mariano Gálvez | Curso: Análisis de Sistemas | Año: 2026 | Integrantes: Anderson Perdomo </footer>
+    </main>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+</html>

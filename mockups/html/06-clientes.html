@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de la Esquina | Clientes</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <span class="eyebrow">Relación comercial</span>
+        <h1>Tienda de la Esquina</h1>
+        <p>Consulta y registro básico de clientes.</p>
+      </div>
+      <div class="nav-group">
+        <p class="nav-title">Pantallas</p>
+        <a class="nav-link" href="01-login.html">01. Login</a>
+        <a class="nav-link" href="02-dashboard.html">02. Dashboard</a>
+        <a class="nav-link" href="03-registrar-venta.html">03. Registrar venta</a>
+        <a class="nav-link" href="04-inventario.html">04. Inventario</a>
+        <a class="nav-link" href="05-productos.html">05. Productos</a>
+        <a class="nav-link active" href="06-clientes.html">06. Clientes</a>
+        <a class="nav-link" href="07-proveedores.html">07. Proveedores</a>
+        <a class="nav-link" href="08-compras.html">08. Compras</a>
+        <a class="nav-link" href="09-reportes.html">09. Reportes</a>
+        <a class="nav-link" href="10-cierre-diario.html">10. Cierre diario</a>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div>
+          <strong>Gestión de clientes</strong><br>
+          <small>Vista asociada al Caso de Uso CU-13 Gestionar clientes</small>
+        </div>
+        <div class="topbar-actions">
+          <a class="btn-soft" href="03-registrar-venta.html">Usar en venta</a>
+          <a class="btn-ghost" href="02-dashboard.html">Inicio</a>
+        </div>
+      </header>
+      <section class="page-head">
+        <h2 class="page-title">Clientes</h2>
+        <p class="page-subtitle">Mockup para registrar información básica del cliente, consultarlo rapidamente y observar un historial de compras simulado.</p>
+      </section>
+      <section class="split">
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Registro básico</h3>
+              <p>Captura visual de datos de cliente.</p>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div><label class="field-label">Nombre completo</label><input class="field" type="text" value="Marta Castillo"></div>
+            <div><label class="field-label">Telefono</label><input class="field" type="text" value="5455-2231"></div>
+            <div class="full"><label class="field-label">Direccion</label><input class="field" type="text" value="Barrio El Centro, casa 14"></div>
+          </div>
+          <div class="btn-row">
+            <a class="btn" href="#">Guardar cliente</a>
+            <a class="btn-ghost" href="#">Buscar cliente</a>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Búsqueda</h3>
+              <p>Consulta simple dentro del catálogo.</p>
+            </div>
+          </div>
+          <div class="search-box">
+            <input type="text" value="Marta">
+            <a class="btn-soft" href="#">Filtrar</a>
+          </div>
+          <div class="list">
+            <div class="list-item"><strong>Marta Castillo</strong><span class="pill ok">Cliente frecuente</span></div>
+            <div class="list-item"><strong>Jose Perez</strong><span class="pill warn">Sin compras recientes</span></div>
+          </div>
+        </article>
+      </section>
+      <section style="margin-top:18px;">
+        <article class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Compra simulada</th>
+                <th>Total</th>
+                <th>Metodo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>20/05/2026</td><td>Abarrotes y bebidas</td><td>Q 84.50</td><td>Efectivo</td></tr>
+              <tr><td>17/05/2026</td><td>Refrigerados y pan</td><td>Q 46.25</td><td>Transferencia</td></tr>
+              <tr><td>12/05/2026</td><td>Compra general de semana</td><td>Q 131.00</td><td>Efectivo</td></tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

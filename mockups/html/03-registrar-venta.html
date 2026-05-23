@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de la Esquina | Registrar venta</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <span class="eyebrow">Operación principal</span>
+        <h1>Tienda de la Esquina</h1>
+        <p>Registro visual del proceso de venta.</p>
+      </div>
+      <div class="nav-group">
+        <p class="nav-title">Pantallas</p>
+        <a class="nav-link" href="01-login.html">01. Login</a>
+        <a class="nav-link" href="02-dashboard.html">02. Dashboard</a>
+        <a class="nav-link active" href="03-registrar-venta.html">03. Registrar venta</a>
+        <a class="nav-link" href="04-inventario.html">04. Inventario</a>
+        <a class="nav-link" href="05-productos.html">05. Productos</a>
+        <a class="nav-link" href="06-clientes.html">06. Clientes</a>
+        <a class="nav-link" href="07-proveedores.html">07. Proveedores</a>
+        <a class="nav-link" href="08-compras.html">08. Compras</a>
+        <a class="nav-link" href="09-reportes.html">09. Reportes</a>
+        <a class="nav-link" href="10-cierre-diario.html">10. Cierre diario</a>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div>
+          <strong>Módulo de ventas</strong><br>
+          <small>Flujo asociado al Caso de Uso CU-09 Registrar venta</small>
+        </div>
+        <div class="topbar-actions">
+          <a class="btn-soft" href="06-clientes.html">Buscar cliente</a>
+          <a class="btn-ghost" href="02-dashboard.html">Volver al dashboard</a>
+        </div>
+      </header>
+      <section class="page-head">
+        <h2 class="page-title">Registrar venta</h2>
+        <p class="page-subtitle">Pantalla prototipo para seleccionar productos, validar stock, calcular el total y registrar una transacción de venta con datos simulados.</p>
+      </section>
+      <section class="split">
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Búsqueda y captura</h3>
+              <p>Formulario visual para encontrar productos y definir la forma de pago.</p>
+            </div>
+          </div>
+          <div class="search-box">
+            <input type="text" value="Pan dulce">
+            <a class="btn-soft" href="#">Buscar producto</a>
+          </div>
+          <div class="form-grid">
+            <div>
+              <label class="field-label">Cliente</label>
+              <input class="field" type="text" value="Consumidor final">
+            </div>
+            <div>
+              <label class="field-label">Metodo de pago</label>
+              <input class="field" type="text" value="Efectivo">
+            </div>
+            <div>
+              <label class="field-label">Vendedor</label>
+              <input class="field" type="text" value="Ana Lopez">
+            </div>
+            <div>
+              <label class="field-label">Hora</label>
+              <input class="field" type="text" value="11:42 AM">
+            </div>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Resumen de la venta</h3>
+              <p>Vista compacta del resultado esperado de la transacción.</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-item"><span>Items agregados</span><strong>4</strong></div>
+            <div class="list-item"><span>Total de unidades</span><strong>11</strong></div>
+            <div class="list-item"><span>Subtotal</span><strong>Q 126.00</strong></div>
+            <div class="list-item"><span>Total a cobrar</span><strong>Q 126.00</strong></div>
+          </div>
+          <div class="btn-row">
+            <a class="btn" href="#">Registrar venta</a>
+            <a class="btn-ghost" href="#">Cancelar</a>
+          </div>
+        </article>
+      </section>
+      <section style="margin-top:18px;">
+        <article class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Stock</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Subtotal</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Pan dulce surtido</td><td>24</td><td>4</td><td>Q 6.00</td><td>Q 24.00</td><td><span class="pill ok">Disponible</span></td></tr>
+              <tr><td>Leche entera 1L</td><td>4</td><td>2</td><td>Q 12.50</td><td>Q 25.00</td><td><span class="pill warn">Bajo stock</span></td></tr>
+              <tr><td>Coca Cola 1.5L</td><td>17</td><td>2</td><td>Q 17.50</td><td>Q 35.00</td><td><span class="pill ok">Disponible</span></td></tr>
+              <tr><td>Huevos por docena</td><td>9</td><td>3</td><td>Q 14.00</td><td>Q 42.00</td><td><span class="pill ok">Disponible</span></td></tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+      <p class="footer-note">Prototipo alineado con RF-09, RF-10, RF-11, RF-12 y RF-13. El cálculo, validación de stock y comprobante son representaciones visuales sin lógica real.</p>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de la Esquina | Dashboard</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <span class="eyebrow">Sistema documental</span>
+        <h1>Tienda de la Esquina</h1>
+        <p>Panel general del sistema de ventas e inventario.</p>
+      </div>
+      <div class="nav-group">
+        <p class="nav-title">Pantallas</p>
+        <a class="nav-link" href="01-login.html">01. Login</a>
+        <a class="nav-link active" href="02-dashboard.html">02. Dashboard</a>
+        <a class="nav-link" href="03-registrar-venta.html">03. Registrar venta</a>
+        <a class="nav-link" href="04-inventario.html">04. Inventario</a>
+        <a class="nav-link" href="05-productos.html">05. Productos</a>
+        <a class="nav-link" href="06-clientes.html">06. Clientes</a>
+        <a class="nav-link" href="07-proveedores.html">07. Proveedores</a>
+        <a class="nav-link" href="08-compras.html">08. Compras</a>
+        <a class="nav-link" href="09-reportes.html">09. Reportes</a>
+        <a class="nav-link" href="10-cierre-diario.html">10. Cierre diario</a>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div>
+          <strong>Panel principal</strong><br>
+          <small>Resumen operativo del sistema al iniciar la jornada</small>
+        </div>
+        <div class="topbar-actions">
+          <span class="pill ok">Usuario: Administrador</span>
+          <a class="btn-ghost" href="01-login.html">Cerrar sesión</a>
+        </div>
+      </header>
+      <section class="page-head">
+        <h2 class="page-title">Dashboard general</h2>
+        <p class="page-subtitle">Vista de control con indicadores del día, alertas de inventario, productos destacados y accesos rapidos a operaciones frecuentes.</p>
+      </section>
+      <section class="layout-grid cards-4">
+        <article class="card">
+          <div class="kicker">Ventas del día</div>
+          <div class="metric">Q 3,485</div>
+          <span class="status ok">26 transacciones registradas</span>
+        </article>
+        <article class="card">
+          <div class="kicker">Bajo stock</div>
+          <div class="metric">8</div>
+          <span class="status warn">Requiere reposición</span>
+        </article>
+        <article class="card">
+          <div class="kicker">Ingresos estimados</div>
+          <div class="metric">Q 4,150</div>
+          <span class="status ok">Meta diaria 84%</span>
+        </article>
+        <article class="card">
+          <div class="kicker">Productos más vendidos</div>
+          <div class="metric">5</div>
+          <span class="status ok">Alta rotación</span>
+        </article>
+      </section>
+      <section class="layout-grid cards-2" style="margin-top:18px;">
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Accesos rapidos</h3>
+              <p>Entradas directas a las operaciones del sistema.</p>
+            </div>
+          </div>
+          <div class="btn-row">
+            <a class="btn" href="03-registrar-venta.html">Nueva venta</a>
+            <a class="btn-soft" href="08-compras.html">Registrar compra</a>
+            <a class="btn-ghost" href="04-inventario.html">Ver inventario</a>
+            <a class="btn-ghost" href="10-cierre-diario.html">Cerrar jornada</a>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Alertas de seguimiento</h3>
+              <p>Indicadores visibles para control diario.</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-item"><strong>Leche entera 1L</strong><span class="pill warn">Stock 4 / minimo 8</span></div>
+            <div class="list-item"><strong>Galletas de soda</strong><span class="pill danger">Vence en 2 dias</span></div>
+            <div class="list-item"><strong>Azucar 1kg</strong><span class="pill ok">Alta rotación</span></div>
+          </div>
+        </article>
+      </section>
+      <section class="layout-grid cards-2" style="margin-top:18px;">
+        <article class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Vendidas hoy</th>
+                <th>Ingreso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Agua pura 600ml</td><td>42</td><td>Q 252.00</td></tr>
+              <tr><td>Pan dulce surtido</td><td>31</td><td>Q 186.00</td></tr>
+              <tr><td>Coca Cola 1.5L</td><td>18</td><td>Q 315.00</td></tr>
+              <tr><td>Huevos por docena</td><td>14</td><td>Q 392.00</td></tr>
+            </tbody>
+          </table>
+        </article>
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Resumen administrativo</h3>
+              <p>Referencia para supervision general del negocio.</p>
+            </div>
+          </div>
+          <div class="notice">
+            Prototipo asociado a los requerimientos de reportes, consulta de indicadores y cierre diario. Los valores mostrados son simulados para fines de documentación.
+          </div>
+          <p class="footer-note">Pantalla vinculada a CU-11 Consultar reportes, CU-12 Generar cierre diario y CU-14 Gestionar inventario.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backlog | Tienda de la Esquina</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <button class="menu-toggle">Menú</button>
+  <div class="site-shell">
+    <aside class="sidebar">
+      <div class="brand"><p class="brand-kicker">Planificación</p><h1 class="brand-title">Product backlog</h1><p class="brand-copy">Priorizacion del trabajo con criterio MoSCoW y distribución por sprints.</p></div>
+      <nav class="nav">
+        <a href="index.html">Inicio</a><a href="scrum.html">Scrum</a><a href="stakeholders.html">Stakeholders</a><a href="requerimientos.html">Requerimientos</a><a href="historias.html">Historias</a><a href="backlog.html">Backlog</a><a href="casos-uso.html">Casos de uso</a><a href="diagramas.html">Diagramas</a><a href="modelo-er.html">Modelo ER</a><a href="arquitectura.html">Arquitectura</a><a href="mockups.html">Mockups</a><a href="riesgos.html">Riesgos</a><a href="qa.html">QA</a><a href="roadmap.html">Roadmap</a><a href="conclusiones.html">Conclusiones</a>
+      </nav>
+    </aside>
+    <main class="content">
+      <section class="hero reveal">
+        <p class="eyebrow">Gestión incremental</p>
+        <h1 class="page-title">Backlog del proyecto</h1>
+        <p class="lead">El backlog organiza las necesidades del negocio en piezas priorizadas y ejecutables. La prioridad se definio con enfoque MoSCoW y se alineo con el valor operativo de la tienda.</p>
+      </section>
+      <section class="table-card reveal">
+        <h2>Backlog resumido</h2>
+        <table>
+          <thead><tr><th>ID</th><th>Historia</th><th>Prioridad</th><th>Sprint sugerido</th></tr></thead>
+          <tbody>
+            <tr><td>HU-01</td><td>Registrar productos</td><td>Must</td><td>1</td></tr>
+            <tr><td>HU-04</td><td>Registrar una venta con varios productos</td><td>Must</td><td>2</td></tr>
+            <tr><td>HU-06</td><td>Registrar entradas de inventario</td><td>Must</td><td>2</td></tr>
+            <tr><td>HU-10</td><td>Bloquear venta sin stock</td><td>Must</td><td>2</td></tr>
+            <tr><td>HU-15</td><td>Identificar productos vencidos</td><td>Must</td><td>3</td></tr>
+            <tr><td>HU-18</td><td>Ver resumen de ventas del día</td><td>Must</td><td>4</td></tr>
+            <tr><td>HU-20</td><td>Autenticar usuarios por rol</td><td>Should</td><td>4</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="grid-2 reveal">
+        <article class="panel">
+          <h2>Criterio de priorizacion</h2>
+          <p>Las historias `Must` atienden continuidad operativa: vender, controlar stock, registrar movimientos y generar cierres. Las `Should` agregan seguridad y control. Las `Could` extienden el valor administrativo.</p>
+        </article>
+        <article class="panel">
+          <h2>Relación con Scrum</h2>
+          <p>El backlog alimenta refinamiento, planificación por sprint y trazabilidad con requerimientos, Casos de Uso y arquitectura. No se maneja como lista aislada, sino como instrumento central del proyecto.</p>
+        </article>
+      </section>
+      <footer class="footer reveal"><strong>Tienda de la Esquina</strong> | Universidad: Mariano Gálvez | Curso: Análisis de Sistemas | Año: 2026 | Integrantes: Anderson Perdomo </footer>
+    </main>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+</html>

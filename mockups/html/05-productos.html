@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de la Esquina | Productos</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <span class="eyebrow">Catálogo</span>
+        <h1>Tienda de la Esquina</h1>
+        <p>Registro y mantenimiento de productos y categorías.</p>
+      </div>
+      <div class="nav-group">
+        <p class="nav-title">Pantallas</p>
+        <a class="nav-link" href="01-login.html">01. Login</a>
+        <a class="nav-link" href="02-dashboard.html">02. Dashboard</a>
+        <a class="nav-link" href="03-registrar-venta.html">03. Registrar venta</a>
+        <a class="nav-link" href="04-inventario.html">04. Inventario</a>
+        <a class="nav-link active" href="05-productos.html">05. Productos</a>
+        <a class="nav-link" href="06-clientes.html">06. Clientes</a>
+        <a class="nav-link" href="07-proveedores.html">07. Proveedores</a>
+        <a class="nav-link" href="08-compras.html">08. Compras</a>
+        <a class="nav-link" href="09-reportes.html">09. Reportes</a>
+        <a class="nav-link" href="10-cierre-diario.html">10. Cierre diario</a>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div>
+          <strong>Gestión de productos</strong><br>
+          <small>Mockup asociado a CU-02, CU-03, CU-04 y CU-05</small>
+        </div>
+        <div class="topbar-actions">
+          <a class="btn-soft" href="04-inventario.html">Ver stock</a>
+          <a class="btn-ghost" href="07-proveedores.html">Proveedores</a>
+        </div>
+      </header>
+      <section class="page-head">
+        <h2 class="page-title">Productos y categorías</h2>
+        <p class="page-subtitle">Pantalla para documentar el registro de productos, modificacion de precios, clasificacion por categoria y estado del catálogo.</p>
+      </section>
+      <section class="split">
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Registrar producto</h3>
+              <p>Formulario visual para alta o actualización del catálogo.</p>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div><label class="field-label">Nombre</label><input class="field" type="text" value="Frijol negro 2 lb"></div>
+            <div><label class="field-label">Categoria</label><input class="field" type="text" value="Granos básicos"></div>
+            <div><label class="field-label">Precio</label><input class="field" type="text" value="Q 18.00"></div>
+            <div><label class="field-label">Proveedor</label><input class="field" type="text" value="Distribuidora Central"></div>
+            <div><label class="field-label">Unidad de control</label><input class="field" type="text" value="Bolsa"></div>
+            <div><label class="field-label">Estado</label><input class="field" type="text" value="Activo"></div>
+          </div>
+          <div class="btn-row">
+            <a class="btn" href="#">Guardar producto</a>
+            <a class="btn-ghost" href="#">Limpiar formulario</a>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Resumen del catálogo</h3>
+              <p>Indicadores de control del módulo.</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-item"><span>Productos activos</span><strong>119</strong></div>
+            <div class="list-item"><span>Categorías registradas</span><strong>14</strong></div>
+            <div class="list-item"><span>Productos inactivos</span><strong>7</strong></div>
+          </div>
+        </article>
+      </section>
+      <section style="margin-top:18px;">
+        <article class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Categoria</th>
+                <th>Precio</th>
+                <th>Proveedor</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Azucar 1kg</td><td>Abarrotes</td><td>Q 8.50</td><td>Distribuidora Central</td><td><span class="pill ok">Activo</span></td></tr>
+              <tr><td>Cafe molido 250g</td><td>Bebidas</td><td>Q 22.00</td><td>Cafe del Valle</td><td><span class="pill ok">Activo</span></td></tr>
+              <tr><td>Yogurt fresa 200ml</td><td>Refrigerados</td><td>Q 5.75</td><td>Lacteos del Norte</td><td><span class="pill danger">Inactivo</span></td></tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

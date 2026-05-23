@@ -1,0 +1,193 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="modelo-er" name="Modelo Entidad-Relación">
+    <mxGraphModel dx="2473" dy="1573" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2600" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="seguridad" parent="1" style="swimlane;fontStyle=1;rounded=1;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="SEGURIDAD" vertex="1">
+          <mxGeometry height="520" width="700" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="auditoria" parent="seguridad" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Auditoría&#xa;PK id_auditoria&#xa;FK id_usuario&#xa;accion&#xa;modulo&#xa;tabla_afectada&#xa;registro_afectado&#xa;fecha_hora" vertex="1">
+          <mxGeometry height="190" width="180" x="490" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="rol" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Rol&#xa;PK id_rol&#xa;nombre&#xa;descripción" vertex="1">
+          <mxGeometry height="110" width="180" x="80" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="usuario" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Usuario&#xa;PK id_usuario&#xa;FK id_rol&#xa;nombre_completo&#xa;nombre_usuario&#xa;contraseña&#xa;correo&#xa;estado" vertex="1">
+          <mxGeometry height="180" width="220" x="300" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="permiso" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Permiso&#xa;PK id_permiso&#xa;nombre&#xa;descripción&#xa;módulo" vertex="1">
+          <mxGeometry height="120" width="190" x="80" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="rolpermiso" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="RolPermiso&#xa;PK id_rol_permiso&#xa;FK id_rol&#xa;FK id_permiso" vertex="1">
+          <mxGeometry height="120" width="190" x="320" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="ventas" parent="1" style="swimlane;fontStyle=1;rounded=1;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="VENTAS" vertex="1">
+          <mxGeometry height="700" width="860" x="780" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="venta" parent="ventas" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Venta&#xa;PK id_venta&#xa;FK id_usuario&#xa;FK id_cliente&#xa;FK id_estado_venta&#xa;FK id_cierre_diario&#xa;fecha_hora&#xa;total_venta" vertex="1">
+          <mxGeometry height="190" width="220" x="90" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="detalleventa" parent="ventas" style="shape=rectangle;whiteSpace=wrap;html=1;" value="DetalleVenta&#xa;PK id_detalle_venta&#xa;FK id_venta&#xa;FK id_producto&#xa;cantidad&#xa;precio_unitario&#xa;subtotal" vertex="1">
+          <mxGeometry height="160" width="190" x="30" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="ventas" source="venta" target="detalleventa" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pagoventa" parent="ventas" style="shape=rectangle;whiteSpace=wrap;html=1;" value="PagoVenta&#xa;PK id_pago_venta&#xa;FK id_venta&#xa;FK id_metodo_pago&#xa;monto&#xa;referencia&#xa;fecha_pago" vertex="1">
+          <mxGeometry height="150" width="150" x="550" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="ventas" source="venta" target="pagoventa" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cierre" parent="ventas" style="shape=rectangle;whiteSpace=wrap;html=1;" value="CierreDiario&#xa;PK id_cierre_diario&#xa;FK id_usuario&#xa;fecha&#xa;total_ventas&#xa;total_efectivo&#xa;total_tarjeta&#xa;total_general" vertex="1">
+          <mxGeometry height="180" width="160" x="690" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="ventas" source="cierre" target="venta" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente" parent="ventas" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Cliente&#xa;PK id_cliente&#xa;nombre_completo&#xa;telefono&#xa;direccion&#xa;estado" vertex="1">
+          <mxGeometry height="140" width="180" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="ventas" source="cliente" target="venta" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="estadoventa" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="EstadoVenta&#xa;PK id_estado_venta&#xa;nombre&#xa;descripción" vertex="1">
+          <mxGeometry height="110" width="180" x="1040" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="metodopago" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="MétodoPago&#xa;PK id_metodo_pago&#xa;nombre&#xa;descripción" vertex="1">
+          <mxGeometry height="110" width="180" x="1260" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="detallecierre" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="DetalleCierreDiario&#xa;PK id_detalle_cierre&#xa;FK id_cierre_diario&#xa;FK id_venta&#xa;monto&#xa;metodo_pago" vertex="1">
+          <mxGeometry height="140" width="170" x="1450" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="compras" parent="1" style="swimlane;fontStyle=1;rounded=1;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="COMPRAS" vertex="1">
+          <mxGeometry height="500" width="700" x="40" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="compra" parent="compras" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Compra&#xa;PK id_compra&#xa;FK id_usuario&#xa;FK id_proveedor&#xa;FK id_estado_compra&#xa;fecha_compra&#xa;total_compra" vertex="1">
+          <mxGeometry height="170" width="210" x="40" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="proveedor" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Proveedor&#xa;PK id_proveedor&#xa;nombre_proveedor&#xa;telefono&#xa;direccion&#xa;estado" vertex="1">
+          <mxGeometry height="140" width="190" x="80" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="estadocompra" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="EstadoCompra&#xa;PK id_estado_compra&#xa;nombre&#xa;descripción" vertex="1">
+          <mxGeometry height="110" width="180" x="310" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="detallecompra" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="DetalleCompra&#xa;PK id_detalle_compra&#xa;FK id_compra&#xa;FK id_producto&#xa;cantidad&#xa;costo_unitario&#xa;subtotal" vertex="1">
+          <mxGeometry height="160" width="200" x="470" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="inventarioBloque" parent="1" style="swimlane;fontStyle=1;rounded=1;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="INVENTARIO" vertex="1">
+          <mxGeometry height="740" width="1360" x="780" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="movimiento" parent="inventarioBloque" style="shape=rectangle;whiteSpace=wrap;html=1;" value="MovimientoInventario&#xa;PK id_movimiento&#xa;FK id_producto&#xa;FK id_usuario&#xa;FK id_venta&#xa;FK id_compra&#xa;tipo_movimiento&#xa;cantidad&#xa;fecha_movimiento" vertex="1">
+          <mxGeometry height="210" width="220" x="1130" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="inventario" parent="inventarioBloque" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Inventario&#xa;PK id_inventario&#xa;FK id_producto&#xa;FK id_estado_inventario&#xa;stock_actual&#xa;stock_minimo&#xa;ultima_actualización" vertex="1">
+          <mxGeometry height="170" width="210" x="860" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="producto" parent="inventarioBloque" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Producto&#xa;PK id_producto&#xa;FK id_categoria&#xa;FK id_marca&#xa;FK id_unidad_medida&#xa;FK id_estado_producto&#xa;nombre&#xa;precio_venta" vertex="1">
+          <mxGeometry height="200" width="220" x="300" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="inventarioBloque" source="producto" target="inventario" value="1:1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e24" edge="1" parent="inventarioBloque" source="producto" target="movimiento" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="estadoproducto" parent="inventarioBloque" style="shape=rectangle;whiteSpace=wrap;html=1;" value="EstadoProducto&#xa;PK id_estado_producto&#xa;nombre&#xa;descripción" vertex="1">
+          <mxGeometry height="110" width="180" x="1090" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="inventarioBloque" source="estadoproducto" target="producto" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="unidad" parent="inventarioBloque" style="shape=rectangle;whiteSpace=wrap;html=1;" value="UnidadMedida&#xa;PK id_unidad_medida&#xa;nombre&#xa;abreviatura&#xa;descripción" vertex="1">
+          <mxGeometry height="130" width="190" x="560" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="inventarioBloque" source="unidad" target="producto" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="categoria" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Categoría&#xa;PK id_categoria&#xa;nombre&#xa;descripción&#xa;estado" vertex="1">
+          <mxGeometry height="130" width="180" x="820" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="marca" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Marca&#xa;PK id_marca&#xa;nombre&#xa;descripción" vertex="1">
+          <mxGeometry height="110" width="170" x="1030" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="estadoinventario" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="EstadoInventario&#xa;PK id_estado_inventario&#xa;nombre&#xa;descripción" vertex="1">
+          <mxGeometry height="110" width="190" x="1500" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="reportes" parent="1" style="swimlane;fontStyle=1;rounded=1;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="REPORTES" vertex="1">
+          <mxGeometry height="240" width="700" x="40" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="reporte" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;" value="Reporte&#xa;PK id_reporte&#xa;FK id_usuario&#xa;tipo_reporte&#xa;fecha_generación&#xa;observaciones" vertex="1">
+          <mxGeometry height="140" width="220" x="250" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="rol" target="usuario" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="rol" target="rolpermiso" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="permiso" target="rolpermiso" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="usuario" target="auditoria" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="usuario" target="venta" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="estadoventa" target="venta" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="metodopago" target="pagoventa" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="usuario" target="cierre" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="cierre" target="detallecierre" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="usuario" target="compra" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="proveedor" target="compra" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="estadocompra" target="compra" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="compra" target="detallecompra" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="categoria" target="producto" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="marca" target="producto" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" edge="1" parent="1" source="estadoinventario" target="inventario" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" edge="1" parent="1" source="usuario" target="movimiento" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e26" edge="1" parent="1" source="producto" target="detalleventa" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e27" edge="1" parent="1" source="producto" target="detallecompra" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e28" edge="1" parent="1" source="venta" target="movimiento" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e29" edge="1" parent="1" source="compra" target="movimiento" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e30" edge="1" parent="1" source="usuario" target="reporte" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

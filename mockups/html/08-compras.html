@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de la Esquina | Compras</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <span class="eyebrow">Reposición</span>
+        <h1>Tienda de la Esquina</h1>
+        <p>Registro visual de compras a proveedor y entrada de productos.</p>
+      </div>
+      <div class="nav-group">
+        <p class="nav-title">Pantallas</p>
+        <a class="nav-link" href="01-login.html">01. Login</a>
+        <a class="nav-link" href="02-dashboard.html">02. Dashboard</a>
+        <a class="nav-link" href="03-registrar-venta.html">03. Registrar venta</a>
+        <a class="nav-link" href="04-inventario.html">04. Inventario</a>
+        <a class="nav-link" href="05-productos.html">05. Productos</a>
+        <a class="nav-link" href="06-clientes.html">06. Clientes</a>
+        <a class="nav-link" href="07-proveedores.html">07. Proveedores</a>
+        <a class="nav-link active" href="08-compras.html">08. Compras</a>
+        <a class="nav-link" href="09-reportes.html">09. Reportes</a>
+        <a class="nav-link" href="10-cierre-diario.html">10. Cierre diario</a>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div>
+          <strong>Módulo de compras</strong><br>
+          <small>Vista asociada al Caso de Uso CU-07 Registrar compra</small>
+        </div>
+        <div class="topbar-actions">
+          <a class="btn-soft" href="07-proveedores.html">Ver proveedores</a>
+          <a class="btn-ghost" href="04-inventario.html">Inventario</a>
+        </div>
+      </header>
+      <section class="page-head">
+        <h2 class="page-title">Registrar compra</h2>
+        <p class="page-subtitle">Pantalla de prototipo para simular el ingreso de productos desde proveedores y la actualización esperada del inventario.</p>
+      </section>
+      <section class="split">
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Datos de la compra</h3>
+              <p>Formulario visual para el encabezado de abastecimiento.</p>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div><label class="field-label">Proveedor</label><input class="field" type="text" value="Distribuidora Central"></div>
+            <div><label class="field-label">Fecha</label><input class="field" type="text" value="22/05/2026"></div>
+            <div><label class="field-label">Responsable</label><input class="field" type="text" value="Don Pedro"></div>
+            <div><label class="field-label">Documento</label><input class="field" type="text" value="FAC-00931"></div>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Impacto esperado</h3>
+              <p>Resumen de actualización simulada sobre existencias.</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-item"><span>Productos recibidos</span><strong>3</strong></div>
+            <div class="list-item"><span>Total de unidades</span><strong>53</strong></div>
+            <div class="list-item"><span>Total compra</span><strong>Q 685.00</strong></div>
+          </div>
+          <div class="btn-row">
+            <a class="btn" href="#">Registrar compra</a>
+            <a class="btn-ghost" href="#">Cancelar</a>
+          </div>
+        </article>
+      </section>
+      <section style="margin-top:18px;">
+        <article class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Costo</th>
+                <th>Subtotal</th>
+                <th>Inventario posterior</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Azucar 1kg</td><td>20</td><td>Q 6.00</td><td>Q 120.00</td><td>49 unidades</td></tr>
+              <tr><td>Arroz 5 lb</td><td>18</td><td>Q 14.50</td><td>Q 261.00</td><td>37 unidades</td></tr>
+              <tr><td>Frijol negro 2 lb</td><td>15</td><td>Q 20.27</td><td>Q 304.00</td><td>28 unidades</td></tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+      <p class="footer-note">Mockup relacionado con RF-07, RF-08 y RF-22. La actualización de inventario es ilustrativa y no se ejecuta de forma real.</p>
+    </main>
+  </div>
+</body>
+</html>

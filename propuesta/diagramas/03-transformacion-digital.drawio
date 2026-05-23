@@ -1,0 +1,16 @@
+<mxfile host="app.diagrams.net" modified="2026-05-22T14:25:00.000Z" versión="24.7.17">
+  <diagram id="transformación-digital" name="Transformación digital">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        <mxCell id="a1" value="Situación actual&#xa;Procesos manuales" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f4dfdb;strokeColor=#8f4b43;" vertex="1" parent="1"><mxGeometry x="120" y="360" width="240" height="90" as="geometry"/></mxCell>
+        <mxCell id="a2" value="Análisis y diseño&#xa;Modelado y trazabilidad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5ecd8;strokeColor=#9a6b2f;" vertex="1" parent="1"><mxGeometry x="470" y="360" width="240" height="90" as="geometry"/></mxCell>
+        <mxCell id="a3" value="Implementación futura&#xa;Sistema modular" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dfeae3;strokeColor=#2f5d50;" vertex="1" parent="1"><mxGeometry x="820" y="360" width="240" height="90" as="geometry"/></mxCell>
+        <mxCell id="a4" value="Transformación digital&#xa;Control y crecimiento" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dce8f7;strokeColor=#4774a8;" vertex="1" parent="1"><mxGeometry x="1170" y="360" width="260" height="90" as="geometry"/></mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="a1" target="a2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="a2" target="a3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="a3" target="a4"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

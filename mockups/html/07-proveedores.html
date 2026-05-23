@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de la Esquina | Proveedores</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <span class="eyebrow">Abastecimiento</span>
+        <h1>Tienda de la Esquina</h1>
+        <p>Control visual de proveedores y relación con productos.</p>
+      </div>
+      <div class="nav-group">
+        <p class="nav-title">Pantallas</p>
+        <a class="nav-link" href="01-login.html">01. Login</a>
+        <a class="nav-link" href="02-dashboard.html">02. Dashboard</a>
+        <a class="nav-link" href="03-registrar-venta.html">03. Registrar venta</a>
+        <a class="nav-link" href="04-inventario.html">04. Inventario</a>
+        <a class="nav-link" href="05-productos.html">05. Productos</a>
+        <a class="nav-link" href="06-clientes.html">06. Clientes</a>
+        <a class="nav-link active" href="07-proveedores.html">07. Proveedores</a>
+        <a class="nav-link" href="08-compras.html">08. Compras</a>
+        <a class="nav-link" href="09-reportes.html">09. Reportes</a>
+        <a class="nav-link" href="10-cierre-diario.html">10. Cierre diario</a>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div>
+          <strong>Gestión de proveedores</strong><br>
+          <small>Mockup asociado a CU-06 Registrar proveedor</small>
+        </div>
+        <div class="topbar-actions">
+          <a class="btn-soft" href="08-compras.html">Ir a compras</a>
+          <a class="btn-ghost" href="05-productos.html">Catálogo</a>
+        </div>
+      </header>
+      <section class="page-head">
+        <h2 class="page-title">Proveedores</h2>
+        <p class="page-subtitle">Vista prototipo para registrar proveedores, consultar contacto, verificar estado y relacionar productos de abastecimiento.</p>
+      </section>
+      <section class="split">
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Registro de proveedor</h3>
+              <p>Formulario visual de datos principales.</p>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div><label class="field-label">Nombre del proveedor</label><input class="field" type="text" value="Distribuidora Central"></div>
+            <div><label class="field-label">Contacto</label><input class="field" type="text" value="Carlos Mejia"></div>
+            <div><label class="field-label">Telefono</label><input class="field" type="text" value="2288-4102"></div>
+            <div><label class="field-label">Estado</label><input class="field" type="text" value="Activo"></div>
+            <div class="full"><label class="field-label">Direccion</label><input class="field" type="text" value="Zona comercial norte, bodega 3"></div>
+          </div>
+          <div class="btn-row">
+            <a class="btn" href="#">Guardar proveedor</a>
+            <a class="btn-ghost" href="#">Actualizar estado</a>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Productos asociados</h3>
+              <p>Relación visual con artículos del catálogo.</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-item"><span>Azucar 1kg</span><span class="pill ok">Entrega semanal</span></div>
+            <div class="list-item"><span>Arroz 5 lb</span><span class="pill ok">Entrega quincenal</span></div>
+            <div class="list-item"><span>Frijol negro 2 lb</span><span class="pill warn">Ultimo pedido hace 12 dias</span></div>
+          </div>
+        </article>
+      </section>
+      <section style="margin-top:18px;">
+        <article class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Proveedor</th>
+                <th>Contacto</th>
+                <th>Telefono</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Distribuidora Central</td><td>Carlos Mejia</td><td>2288-4102</td><td><span class="pill ok">Activo</span></td></tr>
+              <tr><td>Lacteos del Norte</td><td>Miriam Sosa</td><td>2290-1184</td><td><span class="pill ok">Activo</span></td></tr>
+              <tr><td>Bodega San Rafael</td><td>Victor Alvarez</td><td>4478-5622</td><td><span class="pill warn">Revision de precios</span></td></tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

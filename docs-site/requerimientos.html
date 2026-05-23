@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Requerimientos | Tienda de la Esquina</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <button class="menu-toggle">Menú</button>
+  <div class="site-shell">
+    <aside class="sidebar">
+      <div class="brand"><p class="brand-kicker">Análisis funcional</p><h1 class="brand-title">Requerimientos</h1><p class="brand-copy">RF, RNF y reglas de negocio con foco en trazabilidad y control operativo.</p></div>
+      <nav class="nav">
+        <a href="index.html">Inicio</a><a href="scrum.html">Scrum</a><a href="stakeholders.html">Stakeholders</a><a href="requerimientos.html">Requerimientos</a><a href="historias.html">Historias</a><a href="backlog.html">Backlog</a><a href="casos-uso.html">Casos de uso</a><a href="diagramas.html">Diagramas</a><a href="modelo-er.html">Modelo ER</a><a href="arquitectura.html">Arquitectura</a><a href="mockups.html">Mockups</a><a href="riesgos.html">Riesgos</a><a href="qa.html">QA</a><a href="roadmap.html">Roadmap</a><a href="conclusiones.html">Conclusiones</a>
+      </nav>
+    </aside>
+    <main class="content">
+      <section class="hero reveal">
+        <p class="eyebrow">Base del sistema</p>
+        <h1 class="page-title">Requerimientos y reglas</h1>
+        <p class="lead">La documentación funcional prioriza vender con control, mantener inventario consistente y ofrecer trazabilidad administrativa con una interfaz simple para usuarios no tecnicos.</p>
+      </section>
+      <section class="table-card reveal">
+        <h2>Requerimientos funcionales</h2>
+        <table>
+          <thead><tr><th>ID</th><th>Descripción</th><th>Prioridad</th></tr></thead>
+          <tbody>
+            <tr><td>RF-01</td><td>Registrar productos con nombre, categoria, precio y unidad.</td><td>Alta</td></tr>
+            <tr><td>RF-06</td><td>Mostrar existencia disponible por producto.</td><td>Alta</td></tr>
+            <tr><td>RF-07</td><td>Registrar entradas de inventario por compra o reposición.</td><td>Alta</td></tr>
+            <tr><td>RF-09</td><td>Registrar ventas con uno o varios productos.</td><td>Alta</td></tr>
+            <tr><td>RF-10</td><td>Calcular subtotal y total automaticamente.</td><td>Alta</td></tr>
+            <tr><td>RF-11</td><td>Validar stock antes de confirmar una venta.</td><td>Alta</td></tr>
+            <tr><td>RF-12</td><td>Descontar inventario después de vender.</td><td>Alta</td></tr>
+            <tr><td>RF-20</td><td>Listar productos agotados.</td><td>Alta</td></tr>
+            <tr><td>RF-25</td><td>Generar resumen de ventas del día.</td><td>Alta</td></tr>
+            <tr><td>RF-26</td><td>Autenticar usuarios segun rol.</td><td>Media</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="grid-2 reveal">
+        <article class="table-card">
+          <h2>Requerimientos no funcionales</h2>
+          <table>
+            <thead><tr><th>ID</th><th>Categoria</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr><td>RNF-01</td><td>Usabilidad</td><td>Interfaz clara y facil de aprender.</td></tr>
+              <tr><td>RNF-03</td><td>Confiabilidad</td><td>Integridad ante errores operativos.</td></tr>
+              <tr><td>RNF-04</td><td>Seguridad</td><td>Acceso administrativo con autenticación.</td></tr>
+              <tr><td>RNF-05</td><td>Integridad</td><td>Consistencia entre ventas e inventario.</td></tr>
+              <tr><td>RNF-06</td><td>Trazabilidad</td><td>Consulta histórica para control y auditoria.</td></tr>
+            </tbody>
+          </table>
+        </article>
+        <article class="table-card">
+          <h2>Reglas de negocio</h2>
+          <table>
+            <thead><tr><th>ID</th><th>Regla</th></tr></thead>
+            <tbody>
+              <tr><td>RN-01</td><td>No vender productos sin stock disponible.</td></tr>
+              <tr><td>RN-04</td><td>Todo producto debe tener precio mayor que cero.</td></tr>
+              <tr><td>RN-10</td><td>Los productos vencidos no deben venderse.</td></tr>
+              <tr><td>RN-17</td><td>El inventario resulta de entradas menos salidas sobre existencia base.</td></tr>
+              <tr><td>RN-19</td><td>Solo usuarios autorizados pueden modificar precios o productos.</td></tr>
+              <tr><td>RN-25</td><td>Los reportes se construyen sobre transacciones confirmadas.</td></tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+      <section class="panel reveal">
+        <h2>Fuente completa</h2>
+        <p>El catálogo completo de 27 RF, 10 RNF y 25 reglas se mantiene en los documentos fuente del repositorio para exportacion académica y trazabilidad detallada.</p>
+      </section>
+      <footer class="footer reveal"><strong>Tienda de la Esquina</strong> | Universidad: Mariano Gálvez | Curso: Análisis de Sistemas | Año: 2026 | Integrantes: Anderson Perdomo </footer>
+    </main>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
+</html>

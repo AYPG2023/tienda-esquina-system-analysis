@@ -1,0 +1,115 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="arquitectura-candidata" name="Arquitectura candidata">
+    <mxGraphModel dx="1484" dy="944" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cap1" parent="1" style="swimlane;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Capa de Presentación&#xa;- Acceso al sistema&#xa;- Formularios operativos&#xa;- Consultas y mensajes" vertex="1">
+          <mxGeometry height="220" width="1480" x="140" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Autenticacion" vertex="1">
+          <mxGeometry height="60" width="180" x="220" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pantallas de catalogo" vertex="1">
+          <mxGeometry height="60" width="200" x="470" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pantallas de ventas y compras" vertex="1">
+          <mxGeometry height="60" width="240" x="760" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Consultas y reportes" vertex="1">
+          <mxGeometry height="60" width="210" x="1090" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="p5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Cierre diario" vertex="1">
+          <mxGeometry height="60" width="170" x="1380" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cap2" parent="1" style="swimlane;html=1;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Capa de Logica de Negocio&#xa;- Reglas operativas&#xa;- Casos de uso&#xa;- Coordinacion de modulos" vertex="1">
+          <mxGeometry height="330" width="1480" x="140" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="b6" parent="cap2" style="rounded=1;whiteSpace=wrap;html=1;" value="Clientes y proveedores" vertex="1">
+          <mxGeometry height="60" width="210" x="1240" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" parent="cap2" style="rounded=1;whiteSpace=wrap;html=1;" value="Compras" vertex="1">
+          <mxGeometry height="60" width="140" x="1070" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" parent="cap2" style="rounded=1;whiteSpace=wrap;html=1;" value="Ventas" vertex="1">
+          <mxGeometry height="60" width="140" x="960" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" parent="cap2" style="rounded=1;whiteSpace=wrap;html=1;" value="Inventario y movimientos" vertex="1">
+          <mxGeometry height="60" width="230" x="510" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="cap2" source="b4" target="b3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="cap2" source="b5" target="b3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b7" parent="cap2" style="rounded=1;whiteSpace=wrap;html=1;" value="Reportes y cierre diario" vertex="1">
+          <mxGeometry height="60" width="230" x="700" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="cap2" source="b3" target="b7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Usuarios y roles" vertex="1">
+          <mxGeometry height="60" width="180" x="200" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Productos y categorias" vertex="1">
+          <mxGeometry height="60" width="210" x="420" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="cap3" parent="1" style="swimlane;html=1;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Capa de Datos&#xa;- Persistencia&#xa;- Trazabilidad&#xa;- Consultas historicas" vertex="1">
+          <mxGeometry height="220" width="1480" x="180" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Usuarios / Roles" vertex="1">
+          <mxGeometry height="60" width="180" x="220" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Productos / Categorias" vertex="1">
+          <mxGeometry height="60" width="210" x="470" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Inventario / Movimientos" vertex="1">
+          <mxGeometry height="60" width="230" x="760" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="d4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Ventas / Detalles" vertex="1">
+          <mxGeometry height="60" width="190" x="1070" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="d5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Compras / Detalles" vertex="1">
+          <mxGeometry height="60" width="200" x="1320" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="p1" target="b1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="p2" target="b2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="p3" target="b4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="p3" target="b5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="p4" target="b7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="p5" target="b7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="b1" target="d1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="b2" target="d2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="b3" target="d3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="b4" target="d4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="b5" target="d5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="b6" target="d5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

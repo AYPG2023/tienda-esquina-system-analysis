@@ -1,0 +1,20 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f4efe6"/><stop offset="100%" stop-color="#d9e7ec"/></linearGradient></defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <rect x="70" y="70" width="1260" height="760" rx="28" fill="#fffdf8" stroke="#284b63" stroke-width="4"/>
+  <text x="120" y="170" font-family="Segoe UI, Arial" font-size="42" font-weight="700" fill="#153243">Impacto organizacional</text>
+  <text x="120" y="220" font-family="Segoe UI, Arial" font-size="24" fill="#4f6d7a">Cambios operativos y administrativos</text>
+  <circle cx="135" cy="312" r="7" fill="#d96c06"/>
+  <text x="160" y="320" font-family="Segoe UI, Arial" font-size="28" fill="#243b4a">Trabajo diario más ordenado</text>
+  <circle cx="135" cy="382" r="7" fill="#d96c06"/>
+  <text x="160" y="390" font-family="Segoe UI, Arial" font-size="28" fill="#243b4a">Menos errores en registro</text>
+  <circle cx="135" cy="452" r="7" fill="#d96c06"/>
+  <text x="160" y="460" font-family="Segoe UI, Arial" font-size="28" fill="#243b4a">Mayor control de inventario</text>
+  <circle cx="135" cy="522" r="7" fill="#d96c06"/>
+  <text x="160" y="530" font-family="Segoe UI, Arial" font-size="28" fill="#243b4a">Mejor supervision de Don Pedro</text>
+  <circle cx="135" cy="592" r="7" fill="#d96c06"/>
+  <text x="160" y="600" font-family="Segoe UI, Arial" font-size="28" fill="#243b4a">Reportes para decisiones</text>
+  <circle cx="135" cy="662" r="7" fill="#d96c06"/>
+  <text x="160" y="670" font-family="Segoe UI, Arial" font-size="28" fill="#243b4a">Base para crecimiento</text>
+  <text x="120" y="785" font-family="Segoe UI, Arial" font-size="20" fill="#6b7c86">Proyecto académico de transformación digital - Tienda de la Esquina</text>
+</svg>

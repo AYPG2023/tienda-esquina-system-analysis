@@ -1,0 +1,32 @@
+<mxfile host="app.diagrams.net" modified="2026-05-22T12:00:00.000Z" version="24.7.17">
+  <diagram id="actividad-inventario" name="Actividad control inventario">
+    <mxGraphModel dx="1400" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1800">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        <mxCell id="s" value="" style="shape=ellipse;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1"><mxGeometry x="520" y="40" width="30" height="30" as="geometry"/></mxCell>
+        <mxCell id="a1" value="Registrar ingreso de productos" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="390" y="100" width="290" height="50" as="geometry"/></mxCell>
+        <mxCell id="a2" value="Validar producto, cantidad y proveedor" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="370" y="190" width="330" height="50" as="geometry"/></mxCell>
+        <mxCell id="d1" value="&lt;b&gt;Datos validos?&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="445" y="280" width="180" height="90" as="geometry"/></mxCell>
+        <mxCell id="a3" value="Solicitar correccion de datos" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="760" y="300" width="250" height="50" as="geometry"/></mxCell>
+        <mxCell id="a4" value="Actualizar stock del producto" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="400" y="410" width="270" height="50" as="geometry"/></mxCell>
+        <mxCell id="a5" value="Registrar movimiento de inventario" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="385" y="500" width="300" height="50" as="geometry"/></mxCell>
+        <mxCell id="d2" value="&lt;b&gt;Producto con vencimiento?&lt;/b&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="420" y="590" width="230" height="90" as="geometry"/></mxCell>
+        <mxCell id="a6" value="Registrar o actualizar fecha de vencimiento" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="340" y="720" width="390" height="50" as="geometry"/></mxCell>
+        <mxCell id="a7" value="Generar alerta si corresponde" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="410" y="810" width="250" height="50" as="geometry"/></mxCell>
+        <mxCell id="e" value="" style="shape=ellipse;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1"><mxGeometry x="520" y="920" width="30" height="30" as="geometry"/></mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="s" target="a1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="a1" target="a2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="a2" target="d1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" value="No" edge="1" parent="1" source="d1" target="a3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" value="Si" edge="1" parent="1" source="d1" target="a4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="a4" target="a5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="a5" target="d2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" value="Si" edge="1" parent="1" source="d2" target="a6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e9" value="No" edge="1" parent="1" source="d2" target="a7"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="a6" target="a7"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="a7" target="e"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="a3" target="a2"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="885" y="215"/></Array></mxGeometry></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

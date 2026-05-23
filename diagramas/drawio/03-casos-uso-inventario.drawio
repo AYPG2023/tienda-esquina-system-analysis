@@ -1,0 +1,95 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="casos-uso-inventario" name="Casos de uso inventario">
+    <mxGraphModel dx="1349" dy="858" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sys" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="Modulo de Inventario y Abastecimiento" vertex="1">
+          <mxGeometry height="690" width="960" x="280" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="adm" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Administrador" vertex="1">
+          <mxGeometry height="120" width="60" x="80" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="prov" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Proveedor" vertex="1">
+          <mxGeometry height="120" width="60" x="1320" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="i1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar producto" vertex="1">
+          <mxGeometry height="60" width="210" x="340" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="i2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Editar producto" vertex="1">
+          <mxGeometry height="60" width="210" x="420" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="i3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Inactivar producto" vertex="1">
+          <mxGeometry height="60" width="210" x="500" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="i4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gestionar categorias" vertex="1">
+          <mxGeometry height="60" width="220" x="420" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="i5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar proveedor" vertex="1">
+          <mxGeometry height="60" width="220" x="420" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="i6" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar compra" vertex="1">
+          <mxGeometry height="60" width="210" x="790" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="i7" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Actualizar stock" vertex="1">
+          <mxGeometry height="60" width="210" x="690" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="i8" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gestionar inventario" vertex="1">
+          <mxGeometry height="60" width="220" x="960" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="i9" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar productos vencidos" vertex="1">
+          <mxGeometry height="60" width="260" x="940" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="i10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Validar ingreso y stock" vertex="1">
+          <mxGeometry height="60" width="240" x="820" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="adm" target="i1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="adm" target="i2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="adm" target="i3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="adm" target="i4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="adm" target="i5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="adm" target="i6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="adm" target="i7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="adm" target="i8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="adm" target="i9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="prov" target="i5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="prov" target="i6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc1" edge="1" parent="1" source="i6" style="dashed=1;endArrow=open;html=1;" target="i10" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc2" edge="1" parent="1" source="i7" style="dashed=1;endArrow=open;html=1;" target="i10" value="&lt;&lt;include&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext1" edge="1" parent="1" source="i9" style="dashed=1;endArrow=open;html=1;" target="i8" value="&lt;&lt;extend&gt;&gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

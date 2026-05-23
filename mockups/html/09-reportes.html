@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de la Esquina | Reportes</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <span class="eyebrow">Análisis administrativo</span>
+        <h1>Tienda de la Esquina</h1>
+        <p>Visualizacion de indicadores y salidas consolidadas.</p>
+      </div>
+      <div class="nav-group">
+        <p class="nav-title">Pantallas</p>
+        <a class="nav-link" href="01-login.html">01. Login</a>
+        <a class="nav-link" href="02-dashboard.html">02. Dashboard</a>
+        <a class="nav-link" href="03-registrar-venta.html">03. Registrar venta</a>
+        <a class="nav-link" href="04-inventario.html">04. Inventario</a>
+        <a class="nav-link" href="05-productos.html">05. Productos</a>
+        <a class="nav-link" href="06-clientes.html">06. Clientes</a>
+        <a class="nav-link" href="07-proveedores.html">07. Proveedores</a>
+        <a class="nav-link" href="08-compras.html">08. Compras</a>
+        <a class="nav-link active" href="09-reportes.html">09. Reportes</a>
+        <a class="nav-link" href="10-cierre-diario.html">10. Cierre diario</a>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div>
+          <strong>Reportes y analítica</strong><br>
+          <small>Pantalla asociada a CU-11 Consultar reportes</small>
+        </div>
+        <div class="topbar-actions">
+          <a class="btn-soft" href="10-cierre-diario.html">Ir a cierre</a>
+          <a class="btn-ghost" href="02-dashboard.html">Panel principal</a>
+        </div>
+      </header>
+      <section class="page-head">
+        <h2 class="page-title">Reportes</h2>
+        <p class="page-subtitle">Vista prototipo para revisar ventas por día, ventas por producto, productos agotados, productos vencidos e ingresos estimados.</p>
+      </section>
+      <section class="layout-grid cards-4">
+        <article class="card"><div class="kicker">Ventas del periodo</div><div class="metric">Q 12,480</div><span class="status ok">Ultimos 7 dias</span></article>
+        <article class="card"><div class="kicker">Productos agotados</div><div class="metric">5</div><span class="status warn">Requiere compra</span></article>
+        <article class="card"><div class="kicker">Productos vencidos</div><div class="metric">3</div><span class="status danger">No vender</span></article>
+        <article class="card"><div class="kicker">Ingreso estimado mensual</div><div class="metric">Q 48,900</div><span class="status ok">Proyeccion</span></article>
+      </section>
+      <section class="layout-grid cards-2" style="margin-top:18px;">
+        <article class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Ventas</th>
+                <th>Ingresos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>22/05/2026</td><td>26</td><td>Q 3,485.00</td></tr>
+              <tr><td>21/05/2026</td><td>24</td><td>Q 3,128.00</td></tr>
+              <tr><td>20/05/2026</td><td>29</td><td>Q 3,766.00</td></tr>
+            </tbody>
+          </table>
+        </article>
+        <article class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Unidades</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Agua pura 600ml</td><td>118</td><td><span class="pill ok">Alta rotación</span></td></tr>
+              <tr><td>Pan dulce surtido</td><td>86</td><td><span class="pill ok">Alta rotación</span></td></tr>
+              <tr><td>Yogurt fresa 200ml</td><td>0</td><td><span class="pill danger">Vencido / agotado</span></td></tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+      <section class="layout-grid cards-2" style="margin-top:18px;">
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Productos agotados</h3>
+              <p>Referencia para planificación de reposición.</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-item"><span>Yogurt fresa 200ml</span><span class="pill danger">0 unidades</span></div>
+            <div class="list-item"><span>Jugo de naranja 1L</span><span class="pill danger">0 unidades</span></div>
+            <div class="list-item"><span>Papel higienico 4 rollos</span><span class="pill warn">1 unidad</span></div>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Productos vencidos</h3>
+              <p>Elementos no disponibles para venta.</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-item"><span>Yogurt fresa 200ml</span><span class="pill danger">20/05/2026</span></div>
+            <div class="list-item"><span>Queso fresco 250g</span><span class="pill danger">21/05/2026</span></div>
+            <div class="list-item"><span>Crema 200ml</span><span class="pill warn">Vence hoy</span></div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

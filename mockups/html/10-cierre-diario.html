@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de la Esquina | Cierre diario</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <span class="eyebrow">Control de jornada</span>
+        <h1>Tienda de la Esquina</h1>
+        <p>Consolidación visual del cierre diario de operaciones.</p>
+      </div>
+      <div class="nav-group">
+        <p class="nav-title">Pantallas</p>
+        <a class="nav-link" href="01-login.html">01. Login</a>
+        <a class="nav-link" href="02-dashboard.html">02. Dashboard</a>
+        <a class="nav-link" href="03-registrar-venta.html">03. Registrar venta</a>
+        <a class="nav-link" href="04-inventario.html">04. Inventario</a>
+        <a class="nav-link" href="05-productos.html">05. Productos</a>
+        <a class="nav-link" href="06-clientes.html">06. Clientes</a>
+        <a class="nav-link" href="07-proveedores.html">07. Proveedores</a>
+        <a class="nav-link" href="08-compras.html">08. Compras</a>
+        <a class="nav-link" href="09-reportes.html">09. Reportes</a>
+        <a class="nav-link active" href="10-cierre-diario.html">10. Cierre diario</a>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div>
+          <strong>Cierre diario</strong><br>
+          <small>Mockup alineado con CU-12 Generar cierre diario</small>
+        </div>
+        <div class="topbar-actions">
+          <a class="btn-soft" href="09-reportes.html">Consultar reportes</a>
+          <a class="btn-ghost" href="02-dashboard.html">Volver al panel</a>
+        </div>
+      </header>
+      <section class="page-head">
+        <h2 class="page-title">Resumen de cierre diario</h2>
+        <p class="page-subtitle">Pantalla prototipo para consolidar el total vendido, número de ventas, distribución por metodo de pago y observaciones administrativas del día.</p>
+      </section>
+      <section class="layout-grid cards-4">
+        <article class="card"><div class="kicker">Total vendido</div><div class="metric">Q 3,485</div><span class="status ok">Jornada actual</span></article>
+        <article class="card"><div class="kicker">Cantidad de ventas</div><div class="metric">26</div><span class="status ok">Transacciones confirmadas</span></article>
+        <article class="card"><div class="kicker">Ventas en efectivo</div><div class="metric">Q 2,640</div><span class="status ok">75.7%</span></article>
+        <article class="card"><div class="kicker">Ventas digitales</div><div class="metric">Q 845</div><span class="status warn">24.3%</span></article>
+      </section>
+      <section class="layout-grid cards-2" style="margin-top:18px;">
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Resumen por metodo de pago</h3>
+              <p>Distribucion simulada de cobro del día.</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-item"><span>Efectivo</span><strong>Q 2,640.00</strong></div>
+            <div class="list-item"><span>Transferencia</span><strong>Q 510.00</strong></div>
+            <div class="list-item"><span>Tarjeta</span><strong>Q 335.00</strong></div>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Observaciones</h3>
+              <p>Espacio visual para incidencias o validación de caja.</p>
+            </div>
+          </div>
+          <textarea class="textarea" rows="8">Se detecto diferencia menor de Q 5.00 en caja. Se recomienda validar dos ventas en efectivo registradas después de las 5:00 PM.</textarea>
+        </article>
+      </section>
+      <section style="margin-top:18px;">
+        <article class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Indicador</th>
+                <th>Valor</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Ticket promedio</td><td>Q 134.04</td><td>Promedio por transacción</td></tr>
+              <tr><td>Hora pico</td><td>6:00 PM - 7:00 PM</td><td>Mayor cantidad de ventas</td></tr>
+              <tr><td>Producto destacado</td><td>Agua pura 600ml</td><td>Mayor rotación del día</td></tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+      <div class="btn-row" style="margin-top:18px;">
+        <a class="btn" href="#">Generar cierre diario</a>
+        <a class="btn-ghost" href="09-reportes.html">Exportar resumen visual</a>
+      </div>
+      <p class="footer-note">Prototipo relacionado con RF-25 y el módulo de cierre diario. No genera reportes reales ni consolida datos reales.</p>
+    </main>
+  </div>
+</body>
+</html>

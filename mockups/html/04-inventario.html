@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de la Esquina | Inventario</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <span class="eyebrow">Control operativo</span>
+        <h1>Tienda de la Esquina</h1>
+        <p>Monitoreo de existencias, vencimientos y movimientos.</p>
+      </div>
+      <div class="nav-group">
+        <p class="nav-title">Pantallas</p>
+        <a class="nav-link" href="01-login.html">01. Login</a>
+        <a class="nav-link" href="02-dashboard.html">02. Dashboard</a>
+        <a class="nav-link" href="03-registrar-venta.html">03. Registrar venta</a>
+        <a class="nav-link active" href="04-inventario.html">04. Inventario</a>
+        <a class="nav-link" href="05-productos.html">05. Productos</a>
+        <a class="nav-link" href="06-clientes.html">06. Clientes</a>
+        <a class="nav-link" href="07-proveedores.html">07. Proveedores</a>
+        <a class="nav-link" href="08-compras.html">08. Compras</a>
+        <a class="nav-link" href="09-reportes.html">09. Reportes</a>
+        <a class="nav-link" href="10-cierre-diario.html">10. Cierre diario</a>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <div>
+          <strong>Inventario y movimientos</strong><br>
+          <small>Vista asociada a CU-14 Gestionar inventario y CU-15 Consultar productos vencidos</small>
+        </div>
+        <div class="topbar-actions">
+          <a class="btn-soft" href="08-compras.html">Nueva compra</a>
+          <a class="btn-ghost" href="09-reportes.html">Ver reportes</a>
+        </div>
+      </header>
+      <section class="page-head">
+        <h2 class="page-title">Control de inventario</h2>
+        <p class="page-subtitle">Pantalla prototipo para revisar stock actual, stock minimo, fechas de vencimiento y movimientos recientes del inventario.</p>
+      </section>
+      <section class="layout-grid cards-3">
+        <article class="card"><div class="kicker">Productos controlados</div><div class="metric">126</div><span class="status ok">Catálogo activo</span></article>
+        <article class="card"><div class="kicker">Alertas de stock</div><div class="metric">8</div><span class="status warn">Reposición sugerida</span></article>
+        <article class="card"><div class="kicker">Productos vencidos</div><div class="metric">3</div><span class="status danger">Bloqueados para venta</span></article>
+      </section>
+      <section class="layout-grid cards-2" style="margin-top:18px;">
+        <article class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Stock actual</th>
+                <th>Stock minimo</th>
+                <th>Estado</th>
+                <th>Vencimiento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Leche entera 1L</td><td>4</td><td>8</td><td><span class="pill warn">Bajo stock</span></td><td>15/06/2026</td></tr>
+              <tr><td>Arroz 5 lb</td><td>19</td><td>10</td><td><span class="pill ok">Estable</span></td><td>No aplica</td></tr>
+              <tr><td>Galletas de soda</td><td>11</td><td>12</td><td><span class="pill warn">Atención</span></td><td>24/05/2026</td></tr>
+              <tr><td>Yogurt fresa 200ml</td><td>0</td><td>6</td><td><span class="pill danger">Agotado</span></td><td>20/05/2026</td></tr>
+            </tbody>
+          </table>
+        </article>
+        <article class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Movimientos recientes</h3>
+              <p>Registro ficticio de entradas, salidas y ajustes.</p>
+            </div>
+          </div>
+          <div class="list">
+            <div class="list-item"><span>Entrada de compra - Azucar 1kg</span><span class="pill ok">+ 20 unidades</span></div>
+            <div class="list-item"><span>Salida por venta - Agua 600ml</span><span class="pill ok">- 12 unidades</span></div>
+            <div class="list-item"><span>Ajuste por merma - Yogurt fresa</span><span class="pill danger">- 4 unidades</span></div>
+          </div>
+          <p class="footer-note">Vista alineada con RF-06, RF-18, RF-19, RF-20 y RF-21.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
