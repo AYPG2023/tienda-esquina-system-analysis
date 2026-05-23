@@ -1,7 +1,13 @@
 const sidebar = document.querySelector(".sidebar");
 const toggle = document.querySelector(".menu-toggle");
 const links = document.querySelectorAll(".nav a");
-const current = window.location.pathname.split("/").pop() || "index.html";
+
+function normalizePath(path) {
+  const cleaned = path.split("#")[0].split("?")[0];
+  return cleaned.split("/").filter(Boolean).pop() || "index.html";
+}
+
+const current = normalizePath(window.location.pathname);
 
 if (toggle && sidebar) {
   toggle.addEventListener("click", () => {
@@ -14,7 +20,7 @@ if (toggle && sidebar) {
 }
 
 links.forEach((link) => {
-  const href = link.getAttribute("href");
+  const href = normalizePath(link.getAttribute("href") || "");
   if (href === current) {
     link.classList.add("active");
   }
