@@ -1,8 +1,10 @@
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/33ef3606-d6fc-4ada-8231-472a9e5f54ad" alt="Logo de la Universidad Mariano Gálvez" width="160" />
+<img src="https://umg.edu.gt/img/Umg.png" alt="Logo de la Universidad Mariano Gálvez" width="160" />
 
 # Tienda de la Esquina
+
+**Sitio web:** https://aypg2023.github.io/tienda-esquina-system-analysis/
 
 </div>
 

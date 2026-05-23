@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/33ef3606-d6fc-4ada-8231-472a9e5f54ad" alt="Identidad institucional" width="220" />
+<img src="https://umg.edu.gt/img/Umg.png" alt="Identidad institucional" width="220" />
 
 <br><br>
 
