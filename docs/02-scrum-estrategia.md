@@ -2,7 +2,7 @@
 
 ## Que es Scrum
 
-Scrum es un marco de trabajo agil para gestionar productos complejos mediante ciclos cortos e iterativos. Su objetivo es maximizar el valor entregado, favorecer la inspeccion frecuente del progreso y permitir la adaptacion continua frente a nueva información o cambios de prioridad.
+Scrum esta basado en un marco de trabajo agil para gestionar productos complejos mediante ciclos cortos e iterativos. Su objetivo es maximizar el valor entregado, favorecer la inspeccion frecuente del progreso y permitir la adaptacion continua frente a nueva información o cambios de prioridad.
 
 Scrum estructura el trabajo alrededor de:
 
