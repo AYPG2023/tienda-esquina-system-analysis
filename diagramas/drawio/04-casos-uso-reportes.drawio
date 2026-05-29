@@ -1,52 +1,64 @@
 <mxfile host="app.diagrams.net">
   <diagram id="casos-uso-reportes" name="Casos de uso reportes">
-    <mxGraphModel dx="1142" dy="726" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+    <mxGraphModel dx="1518" dy="829" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="sys" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="Modulo de Reportes y Control" vertex="1">
-          <mxGeometry height="620" width="920" x="300" y="80" as="geometry" />
+        <mxCell id="sys" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="780" width="1080" x="320" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;" value="Casos de uso - Reportes y Cierre Diario" vertex="1">
+          <mxGeometry height="30" width="410" x="970" y="115" as="geometry" />
         </mxCell>
         <mxCell id="adm" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Administrador" vertex="1">
-          <mxGeometry height="120" width="60" x="90" y="300" as="geometry" />
+          <mxGeometry height="120" width="60" x="100" y="360" as="geometry" />
         </mxCell>
-        <mxCell id="r1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar reportes" vertex="1">
-          <mxGeometry height="60" width="220" x="500" y="130" as="geometry" />
+        <mxCell id="r_query" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar reportes" vertex="1">
+          <mxGeometry height="60" width="230" x="430" y="180" as="geometry" />
         </mxCell>
-        <mxCell id="r2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar historial de ventas" vertex="1">
-          <mxGeometry height="60" width="260" x="300" y="270" as="geometry" />
+        <mxCell id="r_sales" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Generar reporte de ventas" vertex="1">
+          <mxGeometry height="60" width="270" x="810" y="140" as="geometry" />
         </mxCell>
-        <mxCell id="r3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar ventas por fecha" vertex="1">
-          <mxGeometry height="60" width="240" x="860" y="200" as="geometry" />
+        <mxCell id="r_inventory" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Generar reporte de inventario" vertex="1">
+          <mxGeometry height="60" width="290" x="780" y="340" as="geometry" />
         </mxCell>
-        <mxCell id="r4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Listar productos agotados" vertex="1">
-          <mxGeometry height="60" width="240" x="570" y="310" as="geometry" />
+        <mxCell id="r_export" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Exportar reporte" vertex="1">
+          <mxGeometry height="60" width="210" x="1080" y="220" as="geometry" />
         </mxCell>
-        <mxCell id="r5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar productos de mayor rotacion" vertex="1">
-          <mxGeometry height="60" width="300" x="850" y="430" as="geometry" />
+        <mxCell id="c_close" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Generar cierre diario" vertex="1">
+          <mxGeometry height="60" width="250" x="430" y="550" as="geometry" />
         </mxCell>
-        <mxCell id="r6" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Generar cierre diario" vertex="1">
-          <mxGeometry height="60" width="240" x="580" y="510" as="geometry" />
+        <mxCell id="c_sales_day" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar ventas del día" vertex="1">
+          <mxGeometry height="60" width="250" x="800" y="450" as="geometry" />
         </mxCell>
-        <mxCell id="e1" edge="1" parent="1" source="adm" target="r1">
+        <mxCell id="c_total" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Calcular total diario" vertex="1">
+          <mxGeometry height="60" width="240" x="800" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="c_report" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Generar reporte de cierre" vertex="1">
+          <mxGeometry height="60" width="270" x="790" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="r_query">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e2" edge="1" parent="1" source="adm" target="r6">
+        <mxCell id="a2" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="c_close">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="inc1" edge="1" parent="1" source="r2" style="dashed=1;endArrow=open;html=1;" target="r1" value="&lt;&lt;extend&gt;&gt;">
+        <mxCell id="inc_r1" edge="1" parent="1" source="r_query" style="dashed=1;endArrow=open;html=1;" target="r_sales" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="inc2" edge="1" parent="1" source="r3" style="dashed=1;endArrow=open;html=1;" target="r2" value="&lt;&lt;extend&gt;&gt;">
+        <mxCell id="inc_r2" edge="1" parent="1" source="r_query" style="dashed=1;endArrow=open;html=1;" target="r_inventory" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="inc3" edge="1" parent="1" source="r4" style="dashed=1;endArrow=open;html=1;" target="r1" value="&lt;&lt;extend&gt;&gt;">
+        <mxCell id="ext_r1" edge="1" parent="1" source="r_export" style="dashed=1;endArrow=open;html=1;" target="r_query" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="inc4" edge="1" parent="1" source="r5" style="dashed=1;endArrow=open;html=1;" target="r1" value="&lt;&lt;extend&gt;&gt;">
+        <mxCell id="inc_c1" edge="1" parent="1" source="c_close" style="dashed=1;endArrow=open;html=1;" target="c_sales_day" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="inc5" edge="1" parent="1" source="r6" style="dashed=1;endArrow=open;html=1;" target="r2" value="&lt;&lt;include&gt;&gt;">
+        <mxCell id="inc_c2" edge="1" parent="1" source="c_close" style="dashed=1;endArrow=open;html=1;" target="c_total" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_c3" edge="1" parent="1" source="c_close" style="dashed=1;endArrow=open;html=1;" target="c_report" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>

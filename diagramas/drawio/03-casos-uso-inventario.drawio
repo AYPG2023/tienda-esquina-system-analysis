@@ -1,92 +1,118 @@
 <mxfile host="app.diagrams.net">
   <diagram id="casos-uso-inventario" name="Casos de uso inventario">
-    <mxGraphModel dx="1349" dy="858" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+    <mxGraphModel dx="1708" dy="933" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="sys" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="Modulo de Inventario y Abastecimiento" vertex="1">
-          <mxGeometry height="690" width="960" x="280" y="70" as="geometry" />
+        <mxCell id="sys" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="880" width="1130" x="300" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;" value="Casos de uso - Productos, Inventario y Compras" vertex="1">
+          <mxGeometry height="30" width="460" x="950" y="95" as="geometry" />
         </mxCell>
         <mxCell id="adm" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Administrador" vertex="1">
-          <mxGeometry height="120" width="60" x="80" y="270" as="geometry" />
+          <mxGeometry height="120" width="60" x="80" y="330" as="geometry" />
         </mxCell>
-        <mxCell id="prov" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Proveedor" vertex="1">
-          <mxGeometry height="120" width="60" x="1320" y="250" as="geometry" />
+        <mxCell id="p_manage" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gestionar productos" vertex="1">
+          <mxGeometry height="60" width="230" x="360" y="120" as="geometry" />
         </mxCell>
-        <mxCell id="i1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar producto" vertex="1">
-          <mxGeometry height="60" width="210" x="340" y="80" as="geometry" />
+        <mxCell id="p_create" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar producto" vertex="1">
+          <mxGeometry height="60" width="220" x="690" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="i2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Editar producto" vertex="1">
-          <mxGeometry height="60" width="210" x="420" y="220" as="geometry" />
+        <mxCell id="p_edit" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Editar producto" vertex="1">
+          <mxGeometry height="60" width="210" x="690" y="180" as="geometry" />
         </mxCell>
-        <mxCell id="i3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Inactivar producto" vertex="1">
-          <mxGeometry height="60" width="210" x="500" y="340" as="geometry" />
+        <mxCell id="p_query" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar producto" vertex="1">
+          <mxGeometry height="60" width="220" x="1020" y="140" as="geometry" />
         </mxCell>
-        <mxCell id="i4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gestionar categorias" vertex="1">
-          <mxGeometry height="60" width="220" x="420" y="420" as="geometry" />
+        <mxCell id="p_disable" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Desactivar producto" vertex="1">
+          <mxGeometry height="60" width="230" x="1030" y="240" as="geometry" />
         </mxCell>
-        <mxCell id="i5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar proveedor" vertex="1">
-          <mxGeometry height="60" width="220" x="420" y="520" as="geometry" />
+        <mxCell id="i_manage" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gestionar inventario" vertex="1">
+          <mxGeometry height="60" width="230" x="360" y="390" as="geometry" />
         </mxCell>
-        <mxCell id="i6" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar compra" vertex="1">
-          <mxGeometry height="60" width="210" x="790" y="120" as="geometry" />
+        <mxCell id="i_stock" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar stock" vertex="1">
+          <mxGeometry height="60" width="200" x="560" y="250" as="geometry" />
         </mxCell>
-        <mxCell id="i7" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Actualizar stock" vertex="1">
-          <mxGeometry height="60" width="210" x="690" y="220" as="geometry" />
+        <mxCell id="i_entry" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar entrada" vertex="1">
+          <mxGeometry height="60" width="210" x="800" y="320" as="geometry" />
         </mxCell>
-        <mxCell id="i8" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gestionar inventario" vertex="1">
-          <mxGeometry height="60" width="220" x="960" y="300" as="geometry" />
+        <mxCell id="i_exit" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar salida" vertex="1">
+          <mxGeometry height="60" width="210" x="690" y="480" as="geometry" />
         </mxCell>
-        <mxCell id="i9" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar productos vencidos" vertex="1">
-          <mxGeometry height="60" width="260" x="940" y="480" as="geometry" />
+        <mxCell id="i_move" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar movimiento de inventario" vertex="1">
+          <mxGeometry height="60" width="310" x="650" y="570" as="geometry" />
         </mxCell>
-        <mxCell id="i10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Validar ingreso y stock" vertex="1">
-          <mxGeometry height="60" width="240" x="820" y="590" as="geometry" />
+        <mxCell id="i_low" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Generar alerta de bajo stock" vertex="1">
+          <mxGeometry height="60" width="280" x="1030" y="360" as="geometry" />
         </mxCell>
-        <mxCell id="e1" edge="1" parent="1" source="adm" target="i1">
+        <mxCell id="i_expired" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Verificar productos vencidos" vertex="1">
+          <mxGeometry height="60" width="280" x="1030" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="b_buy" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar compra" vertex="1">
+          <mxGeometry height="60" width="220" x="360" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="b_supplier" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Seleccionar proveedor" vertex="1">
+          <mxGeometry height="60" width="230" x="690" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="b_detail" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar detalle de compra" vertex="1">
+          <mxGeometry height="60" width="280" x="670" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="b_update" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Actualizar inventario" vertex="1">
+          <mxGeometry height="60" width="230" x="1070" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="b_new_supplier" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar nuevo proveedor" vertex="1">
+          <mxGeometry height="60" width="260" x="1040" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="p_manage">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e2" edge="1" parent="1" source="adm" target="i2">
+        <mxCell id="a2" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="i_manage">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e3" edge="1" parent="1" source="adm" target="i3">
+        <mxCell id="a3" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="b_buy">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e4" edge="1" parent="1" source="adm" target="i4">
+        <mxCell id="inc_p1" edge="1" parent="1" source="p_manage" style="dashed=1;endArrow=open;html=1;" target="p_create" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e5" edge="1" parent="1" source="adm" target="i5">
+        <mxCell id="inc_p2" edge="1" parent="1" source="p_manage" style="dashed=1;endArrow=open;html=1;" target="p_edit" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e6" edge="1" parent="1" source="adm" target="i6">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="480" y="190" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e7" edge="1" parent="1" source="adm" target="i7">
+        <mxCell id="inc_p3" edge="1" parent="1" source="p_manage" style="dashed=1;endArrow=open;html=1;" target="p_query" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e8" edge="1" parent="1" source="adm" target="i8">
+        <mxCell id="ext_p1" edge="1" parent="1" source="p_disable" style="dashed=1;endArrow=open;html=1;" target="p_manage" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e9" edge="1" parent="1" source="adm" target="i9">
+        <mxCell id="inc_i1" edge="1" parent="1" source="i_manage" style="dashed=1;endArrow=open;html=1;" target="i_stock" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e10" edge="1" parent="1" source="prov" target="i5">
+        <mxCell id="inc_i2" edge="1" parent="1" source="i_manage" style="dashed=1;endArrow=open;html=1;" target="i_entry" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e11" edge="1" parent="1" source="prov" target="i6">
+        <mxCell id="inc_i3" edge="1" parent="1" source="i_manage" style="dashed=1;endArrow=open;html=1;" target="i_exit" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="inc1" edge="1" parent="1" source="i6" style="dashed=1;endArrow=open;html=1;" target="i10" value="&lt;&lt;include&gt;&gt;">
+        <mxCell id="inc_i4" edge="1" parent="1" source="i_manage" style="dashed=1;endArrow=open;html=1;" target="i_move" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="inc2" edge="1" parent="1" source="i7" style="dashed=1;endArrow=open;html=1;" target="i10" value="&lt;&lt;include&gt;&gt;">
+        <mxCell id="ext_i1" edge="1" parent="1" source="i_low" style="dashed=1;endArrow=open;html=1;" target="i_manage" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ext1" edge="1" parent="1" source="i9" style="dashed=1;endArrow=open;html=1;" target="i8" value="&lt;&lt;extend&gt;&gt;">
+        <mxCell id="ext_i2" edge="1" parent="1" source="i_expired" style="dashed=1;endArrow=open;html=1;" target="i_manage" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_b1" edge="1" parent="1" source="b_buy" style="dashed=1;endArrow=open;html=1;" target="b_supplier" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_b2" edge="1" parent="1" source="b_buy" style="dashed=1;endArrow=open;html=1;" target="b_detail" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc_b3" edge="1" parent="1" source="b_buy" style="dashed=1;endArrow=open;html=1;" target="b_update" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_b1" edge="1" parent="1" source="b_new_supplier" style="dashed=1;endArrow=open;html=1;" target="b_buy" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>

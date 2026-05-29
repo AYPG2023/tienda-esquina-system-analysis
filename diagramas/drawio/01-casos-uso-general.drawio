@@ -1,94 +1,133 @@
 <mxfile host="app.diagrams.net">
   <diagram id="casos-uso-general" name="Casos de uso general">
-    <mxGraphModel dx="1349" dy="858" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+    <mxGraphModel dx="1708" dy="933" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="sys" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="Sistema Tienda de la Esquina" vertex="1">
-          <mxGeometry height="700" width="900" x="300" y="70" as="geometry" />
+        <mxCell id="sys" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="880" width="1130" x="320" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="a1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Administrador" vertex="1">
-          <mxGeometry height="120" width="60" x="80" y="150" as="geometry" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;" value="Sistema de Tienda" vertex="1">
+          <mxGeometry height="30" width="300" x="1130" y="105" as="geometry" />
         </mxCell>
-        <mxCell id="a2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Empleado" vertex="1">
-          <mxGeometry height="120" width="60" x="80" y="380" as="geometry" />
+        <mxCell id="adm" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Administrador" vertex="1">
+          <mxGeometry height="120" width="60" x="80" y="180" as="geometry" />
         </mxCell>
-        <mxCell id="a3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Proveedor" vertex="1">
-          <mxGeometry height="120" width="60" x="1280" y="180" as="geometry" />
+        <mxCell id="emp" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Empleado" vertex="1">
+          <mxGeometry height="120" width="60" x="80" y="520" as="geometry" />
         </mxCell>
-        <mxCell id="a4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Cliente" vertex="1">
-          <mxGeometry height="120" width="60" x="1280" y="420" as="geometry" />
+        <mxCell id="u_login" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Iniciar sesión" vertex="1">
+          <mxGeometry height="60" width="190" x="400" y="100" as="geometry" />
         </mxCell>
-        <mxCell id="u1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Iniciar sesion" vertex="1">
-          <mxGeometry height="60" width="190" x="440" y="90" as="geometry" />
+        <mxCell id="u_credentials" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Validar credenciales" vertex="1">
+          <mxGeometry height="60" width="220" x="730" y="100" as="geometry" />
         </mxCell>
-        <mxCell id="u2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gestionar productos" vertex="1">
-          <mxGeometry height="60" width="210" x="810" y="120" as="geometry" />
+        <mxCell id="u_users" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gestionar usuarios" vertex="1">
+          <mxGeometry height="60" width="220" x="480" y="220" as="geometry" />
         </mxCell>
-        <mxCell id="u3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gestionar inventario" vertex="1">
-          <mxGeometry height="60" width="210" x="560" y="430" as="geometry" />
+        <mxCell id="u_assign_role" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Asignar rol" vertex="1">
+          <mxGeometry height="60" width="180" x="780" y="230" as="geometry" />
         </mxCell>
-        <mxCell id="u4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar compra" vertex="1">
-          <mxGeometry height="60" width="190" x="580" y="660" as="geometry" />
+        <mxCell id="u_roles" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gestionar roles" vertex="1">
+          <mxGeometry height="60" width="200" x="950" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="u5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar venta" vertex="1">
-          <mxGeometry height="60" width="190" x="760" y="220" as="geometry" />
+        <mxCell id="u_assign_perm" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Asignar permisos" vertex="1">
+          <mxGeometry height="60" width="220" x="1200" y="130" as="geometry" />
         </mxCell>
-        <mxCell id="u6" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar reportes" vertex="1">
-          <mxGeometry height="60" width="210" x="780" y="320" as="geometry" />
+        <mxCell id="u_permissions" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gestionar permisos" vertex="1">
+          <mxGeometry height="60" width="220" x="940" y="290" as="geometry" />
         </mxCell>
-        <mxCell id="u7" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Generar cierre diario" vertex="1">
-          <mxGeometry height="60" width="220" x="960" y="530" as="geometry" />
+        <mxCell id="u_view_perm" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar permisos" vertex="1">
+          <mxGeometry height="60" width="220" x="1180" y="290" as="geometry" />
         </mxCell>
-        <mxCell id="u8" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gestionar clientes" vertex="1">
-          <mxGeometry height="60" width="200" x="940" y="680" as="geometry" />
+        <mxCell id="u_products" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gestionar productos" vertex="1">
+          <mxGeometry height="60" width="230" x="360" y="380" as="geometry" />
         </mxCell>
-        <mxCell id="u9" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gestionar proveedores" vertex="1">
-          <mxGeometry height="60" width="220" x="350" y="680" as="geometry" />
+        <mxCell id="u_inventory" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gestionar inventario" vertex="1">
+          <mxGeometry height="60" width="230" x="660" y="400" as="geometry" />
         </mxCell>
-        <mxCell id="e1" edge="1" parent="1" source="a1" target="u1">
+        <mxCell id="u_purchase" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar compra" vertex="1">
+          <mxGeometry height="60" width="210" x="970" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="u_sale" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar venta" vertex="1">
+          <mxGeometry height="60" width="210" x="360" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="u_payment" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar pago" vertex="1">
+          <mxGeometry height="60" width="190" x="980" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="u_receipt" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Generar comprobante" vertex="1">
+          <mxGeometry height="60" width="230" x="1090" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="u_reports" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar reportes" vertex="1">
+          <mxGeometry height="60" width="220" x="360" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="u_export" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Exportar reporte" vertex="1">
+          <mxGeometry height="60" width="200" x="660" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="u_close" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Generar cierre diario" vertex="1">
+          <mxGeometry height="60" width="240" x="960" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="u_close_report" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Generar reporte de cierre" vertex="1">
+          <mxGeometry height="60" width="260" x="1130" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="u_login">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e2" edge="1" parent="1" source="a2" target="u1">
+        <mxCell id="a2" edge="1" parent="1" source="emp" style="endArrow=none;html=1;" target="u_login">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e3" edge="1" parent="1" source="a1" target="u2">
+        <mxCell id="a3" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="u_users">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e4" edge="1" parent="1" source="a1" target="u3">
+        <mxCell id="a4" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="u_roles">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e5" edge="1" parent="1" source="a1" target="u4">
+        <mxCell id="a5" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="u_permissions">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e6" edge="1" parent="1" source="a2" target="u5">
+        <mxCell id="a6" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="u_products">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e7" edge="1" parent="1" source="a1" target="u5">
+        <mxCell id="a7" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="u_inventory">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e8" edge="1" parent="1" source="a1" target="u6">
+        <mxCell id="a8" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="u_purchase">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e9" edge="1" parent="1" source="a1" target="u7">
+        <mxCell id="a9" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="u_sale">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e10" edge="1" parent="1" source="a1" target="u8">
+        <mxCell id="a10" edge="1" parent="1" source="emp" style="endArrow=none;html=1;" target="u_sale">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e11" edge="1" parent="1" source="a1" target="u9">
+        <mxCell id="a11" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="u_reports">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e12" edge="1" parent="1" source="a3" target="u4">
+        <mxCell id="a12" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="u_close">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e13" edge="1" parent="1" source="a3" target="u9">
+        <mxCell id="inc1" edge="1" parent="1" source="u_login" style="dashed=1;endArrow=open;html=1;" target="u_credentials" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e14" edge="1" parent="1" source="a4" target="u5">
+        <mxCell id="inc2" edge="1" parent="1" source="u_users" style="dashed=1;endArrow=open;html=1;" target="u_assign_role" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e15" edge="1" parent="1" source="a4" target="u8">
+        <mxCell id="inc3" edge="1" parent="1" source="u_roles" style="dashed=1;endArrow=open;html=1;" target="u_assign_perm" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc4" edge="1" parent="1" source="u_permissions" style="dashed=1;endArrow=open;html=1;" target="u_view_perm" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc5" edge="1" parent="1" source="u_sale" style="dashed=1;endArrow=open;html=1;" target="u_payment" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext1" edge="1" parent="1" source="u_receipt" style="dashed=1;endArrow=open;html=1;" target="u_sale" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext2" edge="1" parent="1" source="u_export" style="dashed=1;endArrow=open;html=1;" target="u_reports" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc6" edge="1" parent="1" source="u_close" style="dashed=1;endArrow=open;html=1;" target="u_close_report" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
