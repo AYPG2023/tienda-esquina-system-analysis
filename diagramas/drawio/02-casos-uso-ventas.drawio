@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram id="casos-uso-ventas" name="Casos de uso ventas">
-    <mxGraphModel dx="1349" dy="858" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1438" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -23,10 +23,10 @@
           <mxGeometry height="60" width="190" x="720" y="140" as="geometry" />
         </mxCell>
         <mxCell id="v_total" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Calcular total" vertex="1">
-          <mxGeometry height="60" width="190" x="720" y="250" as="geometry" />
+          <mxGeometry height="60" width="190" x="970" y="140" as="geometry" />
         </mxCell>
         <mxCell id="v_payment" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Registrar pago" vertex="1">
-          <mxGeometry height="60" width="190" x="720" y="360" as="geometry" />
+          <mxGeometry height="60" width="190" x="870" y="340" as="geometry" />
         </mxCell>
         <mxCell id="v_inventory" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Actualizar inventario" vertex="1">
           <mxGeometry height="60" width="230" x="1040" y="230" as="geometry" />
@@ -49,18 +49,42 @@
         <mxCell id="v_date" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Consultar ventas por fecha" vertex="1">
           <mxGeometry height="60" width="260" x="1060" y="730" as="geometry" />
         </mxCell>
-        <mxCell id="a1" edge="1" parent="1" source="emp" style="endArrow=none;html=1;" target="v_sale"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="a2" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="v_sale"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="a3" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="v_history"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="inc1" edge="1" parent="1" source="v_sale" style="dashed=1;endArrow=open;html=1;" target="v_stock" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="inc2" edge="1" parent="1" source="v_sale" style="dashed=1;endArrow=open;html=1;" target="v_total" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="inc3" edge="1" parent="1" source="v_sale" style="dashed=1;endArrow=open;html=1;" target="v_payment" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="inc4" edge="1" parent="1" source="v_sale" style="dashed=1;endArrow=open;html=1;" target="v_inventory" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="ext1" edge="1" parent="1" source="v_discount" style="dashed=1;endArrow=open;html=1;" target="v_sale" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="ext2" edge="1" parent="1" source="v_receipt" style="dashed=1;endArrow=open;html=1;" target="v_sale" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="ext3" edge="1" parent="1" source="v_cancel" style="dashed=1;endArrow=open;html=1;" target="v_sale" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="ext4" edge="1" parent="1" source="v_detail" style="dashed=1;endArrow=open;html=1;" target="v_history" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="ext5" edge="1" parent="1" source="v_date" style="dashed=1;endArrow=open;html=1;" target="v_history" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="a1" edge="1" parent="1" source="emp" style="endArrow=none;html=1;" target="v_sale">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="v_sale">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" edge="1" parent="1" source="adm" style="endArrow=none;html=1;" target="v_history">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc1" edge="1" parent="1" source="v_sale" style="dashed=1;endArrow=open;html=1;" target="v_stock" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc2" edge="1" parent="1" source="v_sale" style="dashed=1;endArrow=open;html=1;" target="v_total" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc3" edge="1" parent="1" source="v_sale" style="dashed=1;endArrow=open;html=1;" target="v_payment" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc4" edge="1" parent="1" source="v_sale" style="dashed=1;endArrow=open;html=1;" target="v_inventory" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext1" edge="1" parent="1" source="v_discount" style="dashed=1;endArrow=open;html=1;" target="v_sale" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext2" edge="1" parent="1" source="v_receipt" style="dashed=1;endArrow=open;html=1;" target="v_sale" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext3" edge="1" parent="1" source="v_cancel" style="dashed=1;endArrow=open;html=1;" target="v_sale" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext4" edge="1" parent="1" source="v_detail" style="dashed=1;endArrow=open;html=1;" target="v_history" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext5" edge="1" parent="1" source="v_date" style="dashed=1;endArrow=open;html=1;" target="v_history" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
