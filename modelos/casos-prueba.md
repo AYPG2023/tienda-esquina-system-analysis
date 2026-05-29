@@ -26,7 +26,7 @@
 
 ## CP-03
 **ID:** CP-03  
-**Nombre:** Registrar producto con datos validos  
+**Nombre:** Registrar producto con datos válidos  
 **Objetivo:** Verificar cobertura del registro de productos.  
 **Módulo:** Gestión de productos  
 **Precondiciones:** RF-01 y CU-02 definidos.  
@@ -38,7 +38,7 @@
 
 ## CP-04
 **ID:** CP-04  
-**Nombre:** Rechazar producto con precio no valido  
+**Nombre:** Rechazar producto con precio no válido  
 **Objetivo:** Verificar regla de precio positivo.  
 **Módulo:** Gestión de productos  
 **Precondiciones:** RN-04 y RF-17 documentados.  
@@ -51,7 +51,7 @@
 ## CP-05
 **ID:** CP-05  
 **Nombre:** Editar producto existente  
-**Objetivo:** Confirmar soporte para actualización de catálogo.  
+**Objetivo:** Confirmar soporte para edición de catálogo.  
 **Módulo:** Gestión de productos  
 **Precondiciones:** CU-03 y RF-04 definidos.  
 **Pasos:** 1. Revisar CU-03. 2. Revisar mockup de productos. 3. Verificar trazabilidad.  
@@ -62,7 +62,7 @@
 
 ## CP-06
 **ID:** CP-06  
-**Nombre:** Registrar venta con multiples productos  
+**Nombre:** Registrar venta con múltiples productos  
 **Objetivo:** Verificar cobertura del flujo principal de ventas.  
 **Módulo:** Gestión de ventas  
 **Precondiciones:** RF-09 y CU-09 documentados.  
@@ -75,7 +75,7 @@
 ## CP-07
 **ID:** CP-07  
 **Nombre:** Validar stock antes de vender  
-**Objetivo:** Confirmar que la regla de disponibilidad esta contemplada.  
+**Objetivo:** Confirmar que la regla de disponibilidad está contemplada.  
 **Módulo:** Gestión de ventas  
 **Precondiciones:** RF-11 y RN-01 definidos.  
 **Pasos:** 1. Revisar CU-09. 2. Revisar actividad de venta. 3. Revisar matriz de trazabilidad.  
@@ -111,7 +111,7 @@
 ## CP-10
 **ID:** CP-10  
 **Nombre:** Consultar historial de ventas  
-**Objetivo:** Verificar cobertura de consultas historicas.  
+**Objetivo:** Verificar cobertura de consultas históricas.  
 **Módulo:** Gestión de ventas  
 **Precondiciones:** RF-14, RF-24 y CU-10 definidos.  
 **Pasos:** 1. Revisar CU-10. 2. Revisar reportes y mockups.  
@@ -127,7 +127,7 @@
 **Módulo:** Gestión de proveedores  
 **Precondiciones:** RF-22 y CU-06 definidos.  
 **Pasos:** 1. Revisar `07-proveedores.html`. 2. Revisar CU-06.  
-**Resultado esperado:** La gestión de proveedores esta visual y funcionalmente documentada.  
+**Resultado esperado:** La gestión de proveedores está visual y funcionalmente documentada.  
 **Resultado obtenido:** Conforme.  
 **Estado:** Aprobado  
 **Observaciones:** Relacionado con compras.
@@ -187,7 +187,7 @@
 **Módulo:** Gestión de clientes  
 **Precondiciones:** CU-13 definido y mockup disponible.  
 **Pasos:** 1. Revisar `06-clientes.html`. 2. Revisar CU-13.  
-**Resultado esperado:** El flujo de registro y consulta de clientes esta representado.  
+**Resultado esperado:** El flujo de registro y consulta de clientes está representado.  
 **Resultado obtenido:** Conforme.  
 **Estado:** Aprobado  
 **Observaciones:** Incluye historial simulado.
@@ -214,7 +214,7 @@
 **Resultado esperado:** La documentación representa consolidación de ventas, pagos y observaciones.  
 **Resultado obtenido:** Conforme.  
 **Estado:** Aprobado  
-**Observaciones:** Proceso critico de control.
+**Observaciones:** Proceso crítico de control.
 
 ## CP-19
 **ID:** CP-19  

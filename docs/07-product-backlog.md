@@ -1,23 +1,23 @@
 # 07. Product backlog
 
-## Criterio de priorizacion
+## Criterio de priorización
 
 Se adopta la técnica **MoSCoW** para clasificar el valor y urgencia de cada item:
 
-- **Must:** indispensable para la operación minima del sistema.
+- **Must:** indispensable para la operación mínima del sistema.
 - **Should:** importante, pero no bloquea la funcionalidad esencial inicial.
 - **Could:** deseable si existe capacidad en iteraciones posteriores.
 - **Won't:** fuera del alcance actual de esta fase.
 
 ## Backlog inicial
 
-| ID | Historia | Prioridad | Sprint | Estimacion |
+| ID | Historia | Prioridad | Sprint | Estimación |
 |---|---|---|---|---|
 | HU-01 | Registrar nuevos productos | Must | Sprint 1 | 3 puntos |
-| HU-02 | Buscar productos rapidamente | Must | Sprint 1 | 2 puntos |
+| HU-02 | Buscar productos rápidamente | Must | Sprint 1 | 2 puntos |
 | HU-03 | Consultar existencia disponible | Must | Sprint 1 | 2 puntos |
 | HU-04 | Registrar venta con varios productos | Must | Sprint 1 | 5 puntos |
-| HU-05 | Calcular total de venta automaticamente | Must | Sprint 1 | 3 puntos |
+| HU-05 | Calcular total de venta automáticamente | Must | Sprint 1 | 3 puntos |
 | HU-06 | Registrar entradas de inventario | Must | Sprint 1 | 3 puntos |
 | HU-07 | Actualizar precios de productos | Must | Sprint 1 | 2 puntos |
 | HU-08 | Consultar historial de ventas | Must | Sprint 2 | 3 puntos |
@@ -36,14 +36,12 @@ Se adopta la técnica **MoSCoW** para clasificar el valor y urgencia de cada ite
 
 ## Interpretación del backlog
 
-El backlog inicial concentra primero las capacidades necesarias para sostener la operación básica del negocio: registrar productos, vender, controlar existencias y mantener trazabilidad de movimientos. En segundo plano se ubican funcionalidades de control ampliado, tales como vencimientos, proveedores, ajustes y consultas historicas. Finalmente, se consideran como mejora incremental las funciones analiticas y de seguridad ampliada.
+El backlog inicial concentra primero las capacidades necesarias para sostener la operación básica del negocio: registrar productos, vender, controlar existencias y mantener trazabilidad de movimientos. En segúndo plano se ubican funcionalidades de control ampliado, tales como vencimientos, proveedores, ajustes y consultas históricas. Finalmente, se consideran como mejora incremental las funciones analíticas y de seguridad ampliada.
 
 ## Items fuera del alcance actual
 
 Aunque relevantes para fases posteriores, los siguientes temas se consideran `Won't` dentro de esta etapa documental:
 
-- diagramas UML detallados;
-- diseño draw.io;
 - implementación de base de datos;
 - desarrollo de backend;
 - desarrollo de frontend real;

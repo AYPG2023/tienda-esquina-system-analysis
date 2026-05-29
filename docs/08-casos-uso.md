@@ -269,7 +269,7 @@ Documentar las interacciones funcionales entre los actores del negocio y el sist
 5. El sistema actualiza el stock y guarda el movimiento.  
 **Flujos alternos:**  
 - A1. Ajuste no justificado: el sistema rechaza la operación.  
-- A2. Cantidad resultante negativa: el sistema bloquea la actualización.  
+- A2. Cantidad resultante negativa: el sistema bloquea el ajuste.  
 **Reglas relacionadas:** RN-06, RN-17, RN-22  
 **Requerimientos relacionados:** RF-21  
 

@@ -8,10 +8,10 @@ Relacionar Requerimientos Funcionales, Historias de Usuario, Casos de Uso, regla
 
 | RF | Historia | Caso de uso | Regla | Módulo | Entidad |
 |---|---|---|---|---|---|
-| RF-01 | HU-01 | CU-02 | RN-04, RN-07, RN-08, RN-20 | Gestión de productos | Producto, Categoria |
+| RF-01 | HU-01 | CU-02 | RN-04, RN-07, RN-08, RN-20 | Gestión de productos | Producto, Categoría |
 | RF-02 | HU-02 | CU-02, CU-14 | RN-07, RN-08 | Gestión de productos | Producto |
 | RF-03 | HU-02 | CU-03 | RN-07, RN-08 | Gestión de productos | Producto |
-| RF-04 | HU-07 | CU-03, CU-05 | RN-12, RN-19 | Gestión de productos | Producto, Categoria |
+| RF-04 | HU-07 | CU-03, CU-05 | RN-12, RN-19 | Gestión de productos | Producto, Categoría |
 | RF-05 | HU-01 | CU-04 | RN-15, RN-23 | Gestión de productos | Producto |
 | RF-06 | HU-03 | CU-14 | RN-17, RN-18 | Gestión de inventario | Inventario, Producto |
 | RF-07 | HU-06 | CU-07 | RN-09, RN-16, RN-24 | Gestión de compras | Compra, DetalleCompra, Producto |

@@ -7,8 +7,8 @@ Registrar los diagramas del sistema, explicar su propósito dentro del modelado 
 ## Convenciones adoptadas
 
 - Los diagramas editables se almacenan en `diagramas/drawio/`.
-- Cada archivo utiliza numeracion secuencial y nombre funcional.
-- Los diagramas de Casos de Uso muestran límite del sistema, actores y relaciones principales.
+- Cada archivo utiliza numeración secuencial y nombre funcional.
+- Los diagramas de Casos de Uso muestran límite del sistema, actores y relaciones `<<include>>` / `<<extend>>`.
 - Los diagramas de actividades muestran flujo de proceso, decisiones y resultados.
 - Los modelos de datos muestran entidades, atributos principales y relaciones conceptuales.
 
@@ -16,10 +16,10 @@ Registrar los diagramas del sistema, explicar su propósito dentro del modelado 
 
 | Archivo                                                   | Tipo | Propósito | Relación principal |
 |-----------------------------------------------------------|---|---|---|
-| `diagramas/drawio/01-casos-uso-general.drawio`            | Caso de uso | Presentar una vista global del sistema y sus actores | Casos de uso de alto nivel |
-| `diagramas/drawio/02-casos-uso-ventas.drawio`             | Caso de uso | Modelar las funciones asociadas a ventas y su control | RF-09 a RF-15, HU-04 a HU-11 |
-| `diagramas/drawio/03-casos-uso-inventario.drawio`         | Caso de uso | Modelar abastecimiento, stock y vencimientos | RF-06 a RF-08, RF-18 a RF-22 |
-| `diagramas/drawio/04-casos-uso-reportes.drawio`           | Caso de uso | Modelar consultas administrativas y cierre diario | RF-20, RF-23, RF-24, RF-25 |
+| `diagramas/drawio/01-casos-uso-general.drawio`            | Caso de uso | Presentar una vista global del sistema, actores y dependencias principales | CU-01 a CU-15 |
+| `diagramas/drawio/02-casos-uso-ventas.drawio`             | Caso de uso | Modelar venta, pago, inventario, comprobante y escenarios alternos | CU-09, CU-10 |
+| `diagramas/drawio/03-casos-uso-inventario.drawio`         | Caso de uso | Modelar productos, inventario, compras, proveedores y vencimientos | CU-02 a CU-08, CU-14, CU-15 |
+| `diagramas/drawio/04-casos-uso-reportes.drawio`           | Caso de uso | Modelar reportes administrativos y cierre diario | CU-11, CU-12 |
 | `diagramas/drawio/05-actividad-proceso-venta.drawio`      | Actividad | Describir el proceso operativo completo de venta | CU-09 |
 | `diagramas/drawio/06-actividad-control-inventario.drawio` | Actividad | Describir entradas, validación y control de stock | CU-07, CU-08, CU-14, CU-15 |
 | `diagramas/drawio/07-actividad-cierre-diario.drawio`      | Actividad | Describir la consolidación del día y el reporte final | CU-12 |
@@ -38,13 +38,13 @@ Registrar los diagramas del sistema, explicar su propósito dentro del modelado 
 Los diagramas de Casos de Uso permiten representar visualmente las capacidades funcionales del sistema desde la perspectiva de cada actor. Su utilidad principal radica en:
 
 - validar cobertura funcional frente a requerimientos;
-- facilitar la comprension del alcance;
+- facilitar la comprensión del alcance;
 - identificar dependencias entre procesos;
 - apoyar la posterior construcción de escenarios y pruebas.
 
 ### Diagramas de actividades
 
-Los diagramas de actividades aterrizan los procesos criticos del negocio y ayudan a precisar la lógica de operación. Son especialmente útiles para:
+Los diagramas de actividades aterrizan los procesos críticos del negocio y ayudan a precisar la lógica de operación. Son especialmente útiles para:
 
 - detallar decisiones y validaciones;
 - identificar puntos de control del negocio;
@@ -71,7 +71,7 @@ El modelo ER inicial traduce el dominio conceptual a una estructura de datos bas
 
 ### Arquitectura candidata
 
-El diagrama de Arquitectura Candidata representa la organización del sistema en capas de presentación, lógica de negocio y datos. Su propósito es mostrar como se distribuyen responsabilidades sin comprometer todavía una tecnologia de implementación concreta.
+El diagrama de Arquitectura Candidata representa la organización del sistema en capas de presentación, lógica de negocio y datos. Su propósito es mostrar como se distribuyen responsabilidades sin comprometer todavía una tecnología de implementación concreta.
 
 Elementos principales:
 
@@ -89,7 +89,7 @@ Relación con el análisis del sistema:
 
 ### Componentes lógicos
 
-El diagrama de componentes lógicos detalla los módulos principales del sistema y sus dependencias funcionales. Su utilidad radica en identificar cohesion de responsabilidades y puntos de integración entre ventas, inventario, compras, reportes y administración.
+El diagrama de componentes lógicos detalla los módulos principales del sistema y sus dependencias funcionales. Su utilidad radica en identificar cohesión de responsabilidades y puntos de integración entre ventas, inventario, compras, reportes y administración.
 
 Elementos principales:
 
@@ -117,9 +117,9 @@ El diagrama de flujo de módulos muestra el recorrido funcional del sistema desd
 Elementos principales:
 
 - acceso al sistema;
-- catalogos de negocio;
+- catálogos de negocio;
 - operaciones de compra y venta;
-- actualización de inventario;
+- ajuste de inventario;
 - consolidación de reportes;
 - cierre diario.
 
@@ -131,7 +131,7 @@ Relación con el análisis del sistema:
 
 ### Matriz CRUD visual
 
-El diagrama de matriz CRUD visual representa, de forma sintetica, que módulos crean, consultan, actualizan o inactivan entidades clave del sistema. Su valor principal es fortalecer trazabilidad entre arquitectura y datos.
+El diagrama de matriz CRUD visual representa, de forma sintética, que módulos crean, consultan, actualizan o inactivan entidades clave del sistema. Su valor principal es fortalecer trazabilidad entre arquitectura y datos.
 
 Elementos principales:
 
@@ -159,15 +159,15 @@ Esto asegura trazabilidad entre backlog, análisis y modelado.
 
 Las decisiones principales adoptadas en esta fase son:
 
-1. Separar los diagramas de Casos de Uso por dominio funcional para evitar saturacion visual.
-2. Modelar actividades solo para procesos criticos del negocio: venta, inventario y cierre diario.
+1. Separar los diagramas de Casos de Uso por dominio funcional para evitar saturación visual.
+2. Modelar actividades solo para procesos críticos del negocio: venta, inventario y cierre diario.
 3. Mantener el modelo conceptual y el modelo ER como artefactos distintos, para conservar claridad entre dominio y estructura de datos.
 4. Incorporar `MovimientoInventario` como entidad independiente, debido a su relevancia para trazabilidad y control.
-5. Conservar `Reporte` como entidad de negocio inicial, aunque posteriormente pueda refinarse segun la estrategia de implementación.
+5. Conservar `Reporte` como entidad de negocio inicial, aunque posteriormente pueda refinarse según la estrategia de implementación.
 
 ## Validación técnica de diagramas
 
-### Explicacion técnica de UML
+### Explicación técnica de UML
 
 Los diagramas UML elaborados en el proyecto cumplen una función documental y no de implementación. Se utilizaron principalmente:
 
@@ -182,9 +182,21 @@ Esta combinación permite cubrir comportamiento, flujo y organización del siste
 La validación del conjunto de diagramas permite confirmar que:
 
 - los actores principales del negocio aparecen de forma consistente en Casos de Uso;
-- las relaciones `include` y `extend` responden a dependencias funcionales reales;
+- las relaciones `<<include>>` y `<<extend>>` responden a dependencias funcionales reales;
 - los flujos de actividad representan validaciones coherentes con reglas de negocio;
 - los diagramas estructurales reutilizan los mismos módulos y entidades ya documentados.
+
+Relaciones principales documentadas:
+
+- `CU-09 Registrar venta` `<<include>>` Validar stock, Calcular total, Registrar pago y Actualizar inventario.
+- `CU-09 Registrar venta` `<<extend>>` Aplicar descuento, Generar comprobante y Cancelar venta.
+- `CU-07 Registrar compra` `<<include>>` Seleccionar proveedor, Registrar detalle de compra y Actualizar inventario.
+- `CU-07 Registrar compra` `<<extend>>` Registrar nuevo proveedor.
+- `CU-14 Gestionar inventario` `<<include>>` Consultar stock, Registrar entrada y Registrar salida.
+- `CU-14 Gestionar inventario` `<<extend>>` Generar alerta de bajo stock y Verificar productos vencidos.
+- `CU-11 Consultar reportes` `<<include>>` Generar reporte de ventas y Generar reporte de inventario.
+- `CU-11 Consultar reportes` `<<extend>>` Exportar reporte.
+- `CU-12 Generar cierre diario` `<<include>>` Consultar ventas del día, Calcular total diario y Generar reporte de cierre.
 
 ### Coherencia con Requerimientos Funcionales
 
@@ -193,7 +205,8 @@ Los diagramas mantienen correspondencia con los Requerimientos Funcionales ya de
 - ventas se alinea con RF-09 a RF-15;
 - inventario se alinea con RF-06, RF-08, RF-18, RF-19, RF-20 y RF-21;
 - reportes y cierre diario se alinean con RF-20, RF-23, RF-24 y RF-25;
-- autenticación y control de acceso se alinean con RF-26 y RF-27.
+- seguridad se alinea con RF-26 y RF-27.
+- productos, categorías, proveedores y clientes se alinean con RF-01 a RF-05, RF-14, RF-15, RF-16, RF-17 y RF-22.
 
 ### Coherencia con Historias de Usuario
 
@@ -210,9 +223,9 @@ Esto confirma que el modelado visual conserva el valor definido desde backlog y 
 Las reglas de negocio más sensibles se reflejan visualmente en los procesos modelados. Por ejemplo:
 
 - validación de stock antes de vender;
-- actualización del inventario después de ventas o compras;
+- ajuste del inventario después de ventas o compras;
 - identificación de productos vencidos;
-- generacion del cierre diario con base en ventas confirmadas.
+- generación del cierre diario con base en ventas confirmadas.
 
 La validación documental muestra que no existen contradicciones evidentes entre las reglas y los diagramas generados.
 

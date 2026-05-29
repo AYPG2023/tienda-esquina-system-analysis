@@ -3,7 +3,7 @@
 ## Requerimientos funcionales
 
 ### RF-01
-**Descripción:** El sistema debe permitir registrar productos con nombre, categoria, precio y unidad de control.  
+**Descripción:** El sistema debe permitir registrar productos con nombre, categoría, precio y unidad de control.  
 **Prioridad:** Alta  
 **Actor:** Administrador
 
@@ -38,7 +38,7 @@
 **Actor:** Administrador
 
 ### RF-08
-**Descripción:** El sistema debe actualizar automaticamente el inventario después de registrar una entrada.  
+**Descripción:** El sistema debe actualizar automáticamente el inventario después de registrar una entrada.  
 **Prioridad:** Alta  
 **Actor:** Sistema
 
@@ -48,7 +48,7 @@
 **Actor:** Empleado, Administrador
 
 ### RF-10
-**Descripción:** El sistema debe calcular automaticamente subtotal y total de cada venta.  
+**Descripción:** El sistema debe calcular automáticamente subtotal y total de cada venta.  
 **Prioridad:** Alta  
 **Actor:** Sistema
 
@@ -58,7 +58,7 @@
 **Actor:** Sistema
 
 ### RF-12
-**Descripción:** El sistema debe descontar automaticamente del inventario los productos vendidos.  
+**Descripción:** El sistema debe descontar automáticamente del inventario los productos vendidos.  
 **Prioridad:** Alta  
 **Actor:** Sistema
 
@@ -128,7 +128,7 @@
 **Actor:** Administrador
 
 ### RF-26
-**Descripción:** El sistema debe permitir autenticar usuarios segun su rol operativo.  
+**Descripción:** El sistema debe permitir autenticar usuarios según su rol operativo.  
 **Prioridad:** Media  
 **Actor:** Administrador, Empleado
 
@@ -140,45 +140,45 @@
 ## Requerimientos no funcionales
 
 ### RNF-01
-**Descripción:** El sistema debe ofrecer una interfaz clara y facil de aprender para usuarios con experiencia técnica limitada.  
-**Categoria:** Usabilidad
+**Descripción:** El sistema debe ofrecer una interfaz clara y fácil de aprender para usuarios con experiencia técnica limitada.  
+**Categoría:** Usabilidad
 
 ### RNF-02
-**Descripción:** El tiempo de respuesta para consultar productos o existencias no debe percibirse como lento en operación normal.  
-**Categoria:** Rendimiento
+**Descripción:** El tiempo de respuestá para consultar productos o existencias no debe percibirse como lento en operación normal.  
+**Categoría:** Rendimiento
 
 ### RNF-03
 **Descripción:** El sistema debe preservar la integridad de los datos ante errores de captura o interrupciones operativas.  
-**Categoria:** Confiabilidad
+**Categoría:** Confiabilidad
 
 ### RNF-04
 **Descripción:** El acceso a funciones administrativas debe requerir control de autenticación.  
-**Categoria:** Seguridad
+**Categoría:** Seguridad
 
 ### RNF-05
 **Descripción:** El sistema debe mantener consistencia entre ventas registradas y existencias de inventario.  
-**Categoria:** Integridad
+**Categoría:** Integridad
 
 ### RNF-06
-**Descripción:** La información registrada debe poder consultarse posteriormente para fines de control y auditoria operativa.  
-**Categoria:** Trazabilidad
+**Descripción:** La información registrada debe poder consultarse posteriormente para fines de control y auditoría operativa.  
+**Categoría:** Trazabilidad
 
 ### RNF-07
 **Descripción:** La estructura del sistema debe permitir incorporar nuevos requerimientos sin rehacer completamente el análisis funcional.  
-**Categoria:** Escalabilidad
+**Categoría:** Escalabilidad
 
 ### RNF-08
 **Descripción:** El sistema debe estar disponible durante el horario habitual de operación de la tienda.  
-**Categoria:** Disponibilidad
+**Categoría:** Disponibilidad
 
 ### RNF-09
-**Descripción:** Los mensajes de validación y error deben ser comprensibles para usuarios no tecnicos.  
-**Categoria:** Usabilidad
+**Descripción:** Los mensajes de validación y error deben ser comprensibles para usuarios no técnicos.  
+**Categoría:** Usabilidad
 
 ### RNF-10
-**Descripción:** La información del sistema debe mantenerse organizada de forma que facilite respaldo y recuperacion futura.  
-**Categoria:** Mantenibilidad
+**Descripción:** La información del sistema debe mantenerse organizada de forma que fácilite respaldo y recuperación futura.  
+**Categoría:** Mantenibilidad
 
 ## Conclusiones
 
-Los requerimientos definidos priorizan el control de productos, inventario y ventas, con enfasis en trazabilidad y operación simple. Los funcionales responden directamente a procesos del negocio y los no funcionales aseguran condiciones minimas de calidad para que el sistema sea útil en un entorno comercial pequeño.
+Los requerimientos definidos priorizan el control de productos, inventario y ventas, con énfasis en trazabilidad y operación simple. Los funcionales responden directamente a procesos del negocio y los no funcionales aseguran condiciones mínimas de calidad para que el sistema sea útil en un entorno comercial pequeño.

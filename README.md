@@ -131,12 +131,12 @@ Contiene una versión navegable del proyecto para consulta estructurada de la do
 - [Matriz de trazabilidad](./modelos/matriz-trazabilidad.md)
 - [Matriz de riesgos](./modelos/matriz-riesgos.md)
 - [Plan de sprints](./modelos/plan-sprints.md)
-- [Criterios de aceptación](./modelos/criterios-aceptacion.md)
+- [Criterios de aceptación](./modelos/criterios-aceptación.md)
 - [Plan de pruebas](./modelos/plan-pruebas.md)
 - [Casos de prueba](./modelos/casos-prueba.md)
 - [Matriz de validación](./modelos/matriz-validacion.md)
 - [Checklist de calidad](./modelos/checklist-calidad.md)
-- [Revisión técnica](./modelos/revision-tecnica.md)
+- [Revisión técnica](./modelos/revisión-tecnica.md)
 
 ### Propuesta futura
 
@@ -161,5 +161,5 @@ La solución propuesta gira alrededor de los siguientes módulos:
 - reportes operativos;
 - cierre diario y control administrativo.
 
-La relación crítica del dominio se concentra en el flujo `venta -> detalle de venta -> descuento de inventario -> actualización de reportes -> cierre diario`, reforzado por reglas de validación y por trazabilidad entre requerimientos, Historias de Usuario, Casos de Uso, entidades y mockups.
+La relación crítica del dominio se concentra en el flujo `venta -> detalle de venta -> descuento de inventario -> reportes -> cierre diario`, reforzado por reglas de validación y por trazabilidad entre requerimientos, Historias de Usuario, Casos de Uso, entidades y mockups.
 

@@ -73,7 +73,7 @@ Es el núcleo transaccional del sistema.
 
 Funciones principales:
 
-- seleccionar productos;
+- selecciónar productos;
 - validar disponibilidad;
 - calcular subtotales y total;
 - registrar forma de pago;
@@ -178,7 +178,7 @@ La relación entre ventas e inventario es la más crítica del sistema, porque i
 La lógica esperada es la siguiente:
 
 1. el usuario inicia una venta;
-2. selecciona productos y cantidades;
+2. seleccióna productos y cantidades;
 3. el sistema valida disponibilidad real;
 4. calcula subtotales y total;
 5. registra la venta y su detalle;
@@ -204,7 +204,7 @@ Coordina reglas, validaciones, flujos operativos y consistencia entre módulos.
 
 Conserva entidades, relaciones, historiales y persistencia de operaciones.
 
-Esta separación permite que la interfaz no mezcle responsabilidades con el procesamiento transaccional ni con el almacenamiento de información.
+Está separación permite que la interfaz no mezcle responsabilidades con el procesamiento transaccional ni con el almacenamiento de información.
 
 ## Relación entre requerimientos y Casos de Uso
 
@@ -235,7 +235,7 @@ Por ejemplo:
 
 - el mockup de `Registrar venta` representa la lógica de validación de stock, captura de productos y totalización;
 - el mockup de `Inventario` refleja consultas, alertas y movimientos;
-- el mockup de `Compras` muestra cómo se integraría el abastecimiento con la actualización de existencias;
+- el mockup de `Compras` muestra cómo se integraría el abastecimiento con el incremento de existencias;
 - el mockup de `Cierre diario` resume la consolidación operativa de la jornada.
 
 ## Cómo Scrum organizó el proyecto

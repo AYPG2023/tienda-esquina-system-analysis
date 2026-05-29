@@ -17,9 +17,9 @@
     </aside>
     <main class="content">
       <section class="hero reveal">
-        <p class="eyebrow">Especificacion funcional</p>
+        <p class="eyebrow">Especificación funcional</p>
         <h1 class="page-title">Casos de uso clave</h1>
-        <p class="lead">La especificacion de Casos de Uso traduce los requerimientos en comportamientos concretos con actores, precondiciones, flujos y reglas relacionadas.</p>
+        <p class="lead">La especificación de Casos de Uso traduce los requerimientos en comportamientos concretos con actores, precondiciones, flujos y reglas relacionadas.</p>
       </section>
       <section class="table-card reveal">
         <h2>Catálogo resumido</h2>
@@ -28,10 +28,17 @@
           <tbody>
             <tr><td>CU-01</td><td>Iniciar sesión</td><td>Administrador / Empleado</td><td>Controlar acceso por rol.</td></tr>
             <tr><td>CU-02</td><td>Registrar producto</td><td>Administrador</td><td>Mantener catálogo vigente.</td></tr>
-            <tr><td>CU-07</td><td>Registrar compra</td><td>Administrador</td><td>Abastecer y actualizar inventario.</td></tr>
+            <tr><td>CU-03</td><td>Editar producto</td><td>Administrador</td><td>Mantener datos vigentes.</td></tr>
+            <tr><td>CU-04</td><td>Inactivar producto</td><td>Administrador</td><td>Retirar productos sin perder historial.</td></tr>
+            <tr><td>CU-05</td><td>Gestionar categorías</td><td>Administrador</td><td>Clasificar el catálogo.</td></tr>
+            <tr><td>CU-06</td><td>Registrar proveedor</td><td>Administrador</td><td>Controlar abastecimiento.</td></tr>
+            <tr><td>CU-07</td><td>Registrar compra</td><td>Administrador</td><td>Abastecer y ajustar inventario.</td></tr>
+            <tr><td>CU-08</td><td>Actualizar stock</td><td>Administrador</td><td>Registrar ajustes trazables.</td></tr>
             <tr><td>CU-09</td><td>Registrar venta</td><td>Empleado</td><td>Flujo operativo principal.</td></tr>
+            <tr><td>CU-10</td><td>Consultar historial de ventas</td><td>Administrador</td><td>Revisar transacciones.</td></tr>
             <tr><td>CU-11</td><td>Consultar reportes</td><td>Administrador</td><td>Apoyar toma de decisiones.</td></tr>
             <tr><td>CU-12</td><td>Generar cierre diario</td><td>Administrador</td><td>Consolidar la jornada.</td></tr>
+            <tr><td>CU-13</td><td>Gestionar clientes</td><td>Administrador</td><td>Registrar datos comerciales.</td></tr>
             <tr><td>CU-14</td><td>Gestionar inventario</td><td>Administrador</td><td>Supervisar existencias y alertas.</td></tr>
             <tr><td>CU-15</td><td>Consultar productos vencidos</td><td>Administrador</td><td>Evitar ventas no aptas.</td></tr>
           </tbody>
@@ -39,8 +46,8 @@
       </section>
       <section class="grid-2 reveal">
         <article class="panel">
-          <h2>Flujo critico</h2>
-          <p>`CU-09 Registrar venta` concentra validación de stock, cálculo de totales, registro de fecha y hora, actualización de inventario y generacion de comprobante conceptual.</p>
+          <h2>Flujo crítico</h2>
+          <p>`CU-09 Registrar venta` usa `&lt;&lt;include&gt;&gt;` para Validar stock, Calcular total, Registrar pago y Actualizar inventario; usa `&lt;&lt;extend&gt;&gt;` para Aplicar descuento, Generar comprobante y Cancelar venta.</p>
         </article>
         <article class="panel">
           <h2>Coherencia documental</h2>
