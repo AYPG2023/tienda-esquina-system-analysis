@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram id="actividad-inventario" name="Actividad control inventario">
-    <mxGraphModel dx="976" dy="533" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1800" math="0" shadow="0">
+    <mxGraphModel dx="1649" dy="980" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1800" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -29,7 +29,7 @@
           <mxGeometry height="90" width="230" x="420" y="590" as="geometry" />
         </mxCell>
         <mxCell id="a6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Registrar o actualizar&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; fecha de vencimiento" vertex="1">
-          <mxGeometry height="50" width="390" x="340" y="720" as="geometry" />
+          <mxGeometry height="50" width="390" x="580" y="720" as="geometry" />
         </mxCell>
         <mxCell id="a7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Generar alerta si corresponde" vertex="1">
           <mxGeometry height="50" width="250" x="410" y="810" as="geometry" />
